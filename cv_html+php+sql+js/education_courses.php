@@ -67,7 +67,12 @@ if (isset($_cookie['css'])) {
 			</a>
 		</abbr>
 	</p>
-	<p>[0] MS Excel dla zaawansowanych <abbr title="podgląd niedostępny"><i class="fas fa-file-pdf" disabled="disabled"></i></abbr></p>
+	<p>[0] MS Excel dla zaawansowanych 
+		<abbr title="podgląd dokumentu">
+			<a href="../pdf/Dyplom Microsoft Excel dla Zaawansowanych.pdf" target="_blank">
+				<i class="fas fa-file-pdf"></i>
+		</abbr>
+	</p>
 	</div>
 </article>
 
