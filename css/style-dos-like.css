@@ -6,7 +6,7 @@ hr{margin: 0 0;}
 
 body {margin: 1px;}
 header {border-bottom: solid white 1px;}
-header > h1 {text-align: center;margin: 0px 0px 5px 0px;}
+header * {text-align: center; margin: 0px 0px 5px 0px;font-family: Audiowide;}
 
 .header-href {position: relative;display: inline-block;width: auto;z-index: 1}
 .header-href-content {display: none;position: absolute;background-color: white;width: auto;padding: 0 0;z-index: 2;text-align: unset;}
