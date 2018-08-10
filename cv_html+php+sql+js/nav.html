@@ -1,0 +1,38 @@
+<div class="menu-col-name">
+	<p style="text-align: center;color: yellow;">NAME</p>
+	<p><a class="href-nav" href="../">..</a><span style="visibility: hidden;">&#9654&#9664</span></p>
+	<?php
+	$filestomenu = glob("*.php");
+	$records=count($filestomenu);
+	for ($i=0; $i < $records; $i++) { 
+		echo '<p><a class="href-nav" href="'.$filestomenu[$i].'">'.basename($filestomenu[$i], ".php").'</a></p>';
+	}
+	?>
+</div>
+<div class="menu-col-size">
+	<p style="text-align: center;color: yellow">SIZE</p>
+	<p style="text-align: center;">&#9654UP-DIR&#9664</p>
+	<?php
+	for ($i=0; $i < $records; $i++) { 
+		$stat=stat($filestomenu[$i]);echo '<p style="text-align: right;">'.$stat['size'].'</p>';
+	}
+	?>
+	</div>
+<div class="menu-col-date">
+	<p style="text-align: center;color: yellow;">DATE</p>
+	<p>&nbsp<span style="visibility: hidden;">&#9654&#9664</span></p>
+	<?php
+		for ($i=0; $i < $records; $i++) {
+			$stat=stat($filestomenu[$i]);$date=date_create();date_timestamp_set($date, $stat['mtime']+7200);$stamp=substr(date_format($date, "U=d.m.Y"), -10); echo '<p style="text-align: right;">'.$stamp.'</p>';
+	}
+	?>
+</div>
+<div class="menu-col-time">
+	<p style="text-align: center;color: yellow;">TIME</p>
+	<p>&nbsp<span style="visibility: hidden;">&#9654&#9664</span></p>
+	<?php
+	for ($i=0; $i < $records; $i++) {
+		$stat=stat($filestomenu[$i]);$date=date_create();date_timestamp_set($date, $stat['mtime']+7200);$stamp=substr(date_format($date, "U=H:i"), -5); echo '<p style="text-align: right;">'.$stamp.'</p>';
+	}
+	?>
+</div>

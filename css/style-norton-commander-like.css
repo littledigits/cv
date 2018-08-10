@@ -1,0 +1,93 @@
+* {font-family: Coda, courier new;color: white;background-color: blue;}
+
+body {margin: 0 0;}
+
+#iframe-left {border-style: double;}
+#iframe-right {overflow: auto;border-style: double;}
+
+/*#iframe-left p, #iframe-left p a {width: 99%;}*/
+
+.menu-content {display: none;z-index: 1;position: absolute;background-color: black;}
+.menu-content button {color: black;background-color: white;}
+.show {display:block;}
+
+.navigator {background-color: black;}
+#navigator_adress {width: 50%;}
+
+#button-dos {color:white;background:black;}
+#button-dos:hover {color: black;background: white;}
+#button-nc {color:white;background-color:blue;}
+#button-nc:hover {color:white; background: darkturquoise;}
+
+.bottom-p {color: black;background-color: white;}
+
+@media screen and (max-width: 1280px) {
+
+nav {display: none;}
+
+h1 {color: red;}
+
+hr {display: none;}
+
+.header-href {position: relative;display: inline-block;width: auto;z-index: 1}
+.header-href-content {display: none;position: absolute;width: auto;padding: 0 0;z-index: 2;text-align: unset;}
+.header-href:hover .header-href-content {display: inline;}
+.header-href-content p {margin: unset;background-color: black;}
+
+footer h1 {margin: 0 0;background-color: black;}
+
+/*ul {padding: 0 0;margin: 0 0;list-style-type: none;}*/
+.href-nav {padding: 0 0 0 0;color: white;text-decoration: none;}
+.pointer {cursor: pointer;}
+
+article {clear: both;padding: 5px 0 0 0;overflow: auto;}
+#iframe-left {overflow: auto;display: inline-block;width: 49%;height: 87%;background-color: blue; position: absolute; top: 0px;left: 0px;padding: 2px 2px;z-index: 1;}
+#iframe-right {width: 49%;height: 87%; background-color: blue;position: absolute; top: 0px;right: 0px;padding: 2px 2px;z-index: 1;}
+
+.menu-col-name {float: left;height: 100%;width: auto;border-right: 2px solid white;}
+.menu-col-size {float: left;height: 100%;width: auto;border-right: 2px solid white;}
+.menu-col-date {float: left;height: 100%;width: auto;border-right: 2px solid white;}
+.menu-col-time {float: left;height: 100%;width: auto;}
+
+.menu a {text-decoration: none;}
+.menu a:link {text-decoration: none;}
+.menu a:visited {text-decoration: none;}
+.menu a:hover, a:hover {text-decoration: none;background-color: darkturquoise;}
+.menu a:active {text-decoration: none;}
+.menu a:focus {text-decoration: none;}
+
+h3.clickable {cursor: pointer;}
+.subdir-visible-hidden {display: none;}
+.subdir-hidden-visible {display: unset;}
+.h3-p-list {margin-left: 3%;}
+
+p {margin: 1px;}
+
+.home{border:solid 1px white;padding-left: 1px;position: fixed;right: 1px;top: 500px;text-decoration: none;}
+
+footer {clear: both;height: auto;color: white;background-color: black;position: fixed;bottom: 0; right: 0;width: 100%;}
+footer p {margin: 0 0 0 0;}
+
+}
+
+.skillbar {}
+
+@media screen and (max-width: 768px) {
+	h1 {color: yellow;font-size: 90%;}
+	.menu-col-size, .menu-col-date, .menu-col-time {display: none;}
+	#iframe-left {width: 48%;height: 80%; float: left;overflow: auto;}
+	.menu-col-name {border: none;}
+	#iframe-right {width: 48%;height: 80%;float: right;}
+	ul li a {}
+}
+
+
+
+@media screen and (max-width: 480px) {
+	.mid-big {display: none;}
+	h1 {display: none;}
+	nav {display: none;}
+	#iframe-left {overflow: auto;width: 97%;height: 40%;position: unset;float: none;}
+	#iframe-right {width: 97%;height: 400px;position: unset;float: none;}
+	footer {position: unset;}
+}

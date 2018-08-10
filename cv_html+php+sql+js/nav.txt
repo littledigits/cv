@@ -1,0 +1,27 @@
+<?php
+echo '<ul class="menu mid-big">';
+$filestomenu = glob("*.php");
+$records=count($filestomenu);
+$file=pathinfo($_SERVER['PHP_SELF']);
+for ($i=0; $i < $records; $i++) {
+	
+	if($filestomenu[$i]==$file['basename']){
+		$class='menu-selected';
+	} else {
+		$class='';
+	}
+
+	$filetoopen=fopen($filestomenu[$i], 'r');
+	$needle='<title>';
+	while (!feof($filetoopen)) {
+		$haystack=fgets($filetoopen);
+			if(strstr($haystack,$needle)){
+	 			$title=chop(substr($haystack, 7));
+	 			break;
+			} else {echo '';}
+	}
+	fclose($filetoopen);
+
+	echo '<li><a href="'.$filestomenu[$i].'"class="'.$class.'">'.$title.'</a></li>';
+	}
+?>
