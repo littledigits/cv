@@ -9,7 +9,7 @@ header {border-bottom: solid white 1px;}
 header * {font-family: Audiowide;text-align: center;margin: 0;}
 header a {text-decoration: none;}
 
-nav {position: sticky; top: 0;z-index: 1;display: flex;}
+nav {position: sticky; top: 0;z-index: 1;border-bottom: 1px solid white;display: flex;}
 .dropdown {display: none;}
 .menu-selected::before{content: "<";}
 .menu-selected::after{content: "/>";}
