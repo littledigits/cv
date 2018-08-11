@@ -90,16 +90,15 @@ if (isset($_cookie['css'])) {
 		</article>
 
 	<footer id="footer-dimension">
-		<?php include $urladdres.'widgets/css_button.txt';?>
+		<?php include $urladdres.'widgets/css_button.txt';
 
-<?php
-if (isset($_COOKIE['css'])) {
-if ($_COOKIE['css']=="dos") include 'footer.txt';
-elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
-else print '';
-}
-else include 'footer.txt';
-?>
+		if (isset($_COOKIE['css'])) {
+		if ($_COOKIE['css']=="dos") include 'footer.txt';
+		elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
+		else print '';
+		}
+		else include 'footer.txt';
+		?>
 
 		<p class="bottom-p">Strona wyświetlona (czas serwera) <?php
 		$weekday=array('Monday'=>'poniedziałek', 'Tuesday'=>'wtorek', 'Wednesday'=>'środa', 'Thursday'=>'czwartek', 'Friday'=>'piątek', 'Saturday'=>'sobota', 'Sunday'=>'niedziela');

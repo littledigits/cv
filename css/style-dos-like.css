@@ -8,6 +8,8 @@ body {margin: 1px;}
 header {border-bottom: solid white 1px;}
 header * {font-family: Audiowide;text-align: center;margin: 0;}
 header a {text-decoration: none;}
+/*do testów rozdzielczości*/
+header h1 a {color: orange;}
 
 nav {position: sticky; top: 0;z-index: 1;border-bottom: 1px solid white;display: flex;}
 .dropdown {display: none;}
@@ -18,6 +20,8 @@ ul li, nav a {float: left;}
 ul li a, nav a {display: block;padding: 0px 0px 0px 10px;}
 
 article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
+
+#iframe-left {display: none;}
 
 .dir:before {content: "<";}
 .dir:after {content: ">";}
@@ -70,53 +74,20 @@ footer p {margin: 0 0 0 0;}
 
 .skillbar {background-color:black;color:white;text-align:center;z-index: 1;font-family: Audiowide;}
 
-@media screen and (max-width: 1280px) and (max-height: 1024px) {
-	
-	#iframe-left {display: none;}
-	.footer-margin{clear: both;}
-	.home{bottom: px;}
-
-	#index-body{width: 99%;height: 890px;}
-	iframe {width: 100%;height: 75%;}
-}
-
-@media screen and (max-width: 1280px) and (max-height: 900px) {
-	* {font-size: 103%}
-	.footer-margin{clear: both;height: 90px;}
-	.home{bottom: px;"}
-
-	#index-body{width: 99%;height: 790px;}
-	iframe {width: 100%;height: 71%;}
-}
-
-@media screen and (max-width: 1280px) and (max-height: 800px) {
-	header h1 {color: orange;}
-	iframe {width: 100%;height: 71%;}
-	h3 {margin: 20px 0 5px 0;}
-	.home{position: fixed;right: 1px;top: 500px;}
-}
-
-@media screen and (max-width: 1280px) and (max-height: 768px) {
-	#index-body{width: 99%;height: 560px;}
-	iframe {width: 100%;height: 71%;}
-	.footer-margin
-}
-
-@media screen and (max-width: 1024px) {
-	#index-body{width: 99%;height: 600px;}
-	iframe {width: 100%;height: 73%;}
-	.footer-margin
-}
+.home{bottom: px;}
 
 @media screen and (max-width: 768px) {
-	#index-body{width: 480px;}
-	iframe {width: 100%;height: 73%;}
-	.footer-margin
+	/*do testów rozdzielczości*/header h1 a {color: blue;}
+	header * {font-size: 95%;text-align: left;}
+	header {display: flex;}
+	.big {display: none;}
+	#menu-button {float: right;color: black; background: white;}
 }
 
 @media screen and (max-width: 480px) {
 	header {text-align: left;height: auto;}
-	header h1 {font-size: 125%;color: green;height: auto;margin: 1px 1px;}
+	header h1 {font-size: 125%;height: auto;margin: 1px 1px;}
+	/*do testów rozdzielczości*/header h1 a {color: green;}
 	nav {border-bottom: none;}
 	h2{margin: 1px 1px;}
 	h3{margin: 1px 1px;}
@@ -126,8 +97,9 @@ footer p {margin: 0 0 0 0;}
 	ul li {padding: 0 0;clear: left;}
 	ul li a {padding: 0px 0px 0px 10px;}
 	iframe{float: left;width: 430px;}
-	p{margin: 3px 3px;}
-	/*footer {display: none;}*/
+	p {margin: 3px 3px;}
+	footer {padding-right: 1px;}
+	#footer-brands-icons {float: right;}
 	li a:before {content: none;}
 	li a:after {content: none;}
 	
