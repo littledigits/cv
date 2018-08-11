@@ -4,9 +4,5 @@ if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
 } else {
 	$urladdress='littledigits.pl/cv/';
 }
-echo '<h1>www:\littleDIGITS.pl\<a class="header-href" href="http://'.$urladdress.'">CURRICULUM VITAE\
-				<span class="header-href-content"><p>cd..</p>
-				</span>
-			</a>
-		</h1>';
+echo '<h1><a class="header-href" href="http://'.$urladdress.'">www:\littleDIGITS.pl\CURRICULUM VITAE\</a></h1>';
 ?>

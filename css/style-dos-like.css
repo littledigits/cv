@@ -6,13 +6,8 @@ hr{margin: 0 0;}
 
 body {margin: 1px;}
 header {border-bottom: solid white 1px;}
-header > h1 {text-align: center;margin: 0px 0px 5px 0px;}
-header * {font-family: Audiowide;}
-
-.header-href {position: relative;display: inline-block;width: auto;z-index: 1}
-.header-href-content {display: none;position: absolute;background-color: white;width: auto;padding: 0 0;z-index: 2;text-align: unset;}
-.header-href:hover .header-href-content {display: inline;}
-.header-href-content p {margin: unset;}
+header * {font-family: Audiowide;text-align: center;margin: 0;}
+header a {text-decoration: none;}
 
 nav {position: sticky; top: 0;z-index: 1;border-bottom: 1px solid white;display: flex;}
 .dropdown {display: none;}
