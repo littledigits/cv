@@ -11,7 +11,7 @@ else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.c
 ?>
 <!doctype html>
 <html lang="pl-PL">
-<title>[xyz] LITERATURA</title>
+<title>LITERATURA</title>
 <link rel="Shortcut icon" href="../images/logo.png">
 <body>
 <header id="header-dimension">
