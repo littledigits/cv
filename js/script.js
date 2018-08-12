@@ -24,9 +24,13 @@ function selekcja(thisstring) {
 		}
 	};
 	xhttp.open("GET", "../widgets/oninput.php?q="+thisstring, true);
-	xhttp.send();   
+	xhttp.send();
 }
 
+function menuShow() {
+	document.getElementById("menu").classList.toggle("show");
+	document.getElementById("menu-button").classList.toggle
+}
 function subdirOpenClose1() {
 	document.getElementById("h301i02").classList.toggle("subdir-hidden-visible");
 	document.getElementById("h301div").classList.toggle("subdir-hidden-visible");

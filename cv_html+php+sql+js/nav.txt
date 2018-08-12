@@ -1,5 +1,6 @@
 <?php
-echo '<ul class="menu mid-big">';
+echo '<button id="menu-button" onclick="menuShow()">menu</button>';
+echo '<ul id="menu" class="menu">';
 $filestomenu = glob("*.php");
 $records=count($filestomenu);
 $file=pathinfo($_SERVER['PHP_SELF']);

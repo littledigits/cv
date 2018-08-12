@@ -10,14 +10,13 @@ header * {font-family: Audiowide;text-align: center;margin: 0;}
 header a {text-decoration: none;}
 /*do testów rozdzielczości*/
 header h1 a {color: orange;}
+#menu-button {display: none;}
 
 nav {position: sticky; top: 0;z-index: 1;border-bottom: 1px solid white;display: flex;}
 .dropdown {display: none;}
 .menu-selected::before{content: "<";}
 .menu-selected::after{content: "/>";}
-ul, nav a {padding: 0 0;margin: 0 0;list-style-type: none;}
-ul li, nav a {float: left;}
-ul li a, nav a {display: block;padding: 0px 0px 0px 10px;}
+
 
 article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
 
@@ -34,19 +33,23 @@ h3.clickable {cursor: pointer;}
 .subdir-visible-hidden {display: none;}
 .subdir-hidden-visible {display: unset;}
 
-/*.read-more-hide {display: none;}
-.read-more-show {display: unset;}*/
-
 .h3-p-list {margin-left: 3%;}
 
 #display_hidden {visibility: hidden;}
 
-.menu a, nav a {text-decoration: none;}
-.menu a:link {text-decoration: none;}
+/*ul {padding: 0 0;margin: 0 0;list-style-type: none;}
+ul li, nav a {float: left;}
+ul li a, nav a {display: block;padding: 0px 0px 0px 10px;}*/
+
+ul.menu {list-style-type: none;padding: 0;margin:0;}
+.menu li {float: left;margin: 0 0 0 15px;}
+.menu li:first-child {margin: 0;}
+.menu a {text-decoration: none;}
+/*.menu a:link {text-decoration: none;}
 .menu a:visited {text-decoration: none;}
 .menu a:hover {text-decoration: none;}
 .menu a:active {text-decoration: none;}
-.menu a:focus {text-decoration: none;}
+.menu a:focus {text-decoration: none;}*/
 
 p {margin: 1px;}
 h3#zero{counter-reset: licznik;}
@@ -63,7 +66,7 @@ footer p {margin: 0 0 0 0;}
 
 .menu-content {display: none;z-index: 1;position: absolute;}
 .menu-content button {color: black;background-color: white;}
-.show {display:block;}
+.show {display: initial;}
 
 #button-dos {color:white;background:black;}
 #button-dos:hover {color: black;background: white;}
@@ -78,16 +81,26 @@ footer p {margin: 0 0 0 0;}
 
 @media screen and (max-width: 768px) {
 	/*do testów rozdzielczości*/header h1 a {color: blue;}
-	header * {font-size: 95%;text-align: left;}
-	header {display: flex;}
+	header {width: 100%;display: inline-block;}
+	header * {font-size: 95%;}
 	.big {display: none;}
-	#menu-button {float: right;color: black; background: white;}
+	nav {width: 100%;display: table;}
+	nav * {display: block;width: 100%;}
+	#menu-button {display: initial;color: black; background: white;}
+	ul.menu {display: none;}
+	ul.menu {list-style-type: none;padding: 0;margin:0;}
+	.menu li {margin: 0;text-align: center;}
+	.menu a {text-decoration: none;}
+	nav:hover .menu {display: initial;}
+	#nav-dimension:hover .menu {display: none;}
+	ul.show {display: block;}
+	/**/
 }
 
 @media screen and (max-width: 480px) {
+	/*do testów rozdzielczości*/header h1 a {color: green;}
 	header {text-align: left;height: auto;}
 	header h1 {font-size: 125%;height: auto;margin: 1px 1px;}
-	/*do testów rozdzielczości*/header h1 a {color: green;}
 	nav {border-bottom: none;}
 	h2{margin: 1px 1px;}
 	h3{margin: 1px 1px;}
