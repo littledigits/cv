@@ -6,9 +6,9 @@ hr{margin: 0;}
 
 body {margin: 1px;}
 header {border-bottom: solid white 1px;}
-header * {font-family: Audiowide;text-align: center;margin: 0;}
+header * {font-family: Audiowide;text-align: center;margin: 0;word-wrap: break-word;}
 header a {text-decoration: none;}
-/*resolution test*/header h1 a {color: orange;}
+/*resolution testheader h1 a {color: orange;}*/
 
 nav {border-bottom: 1px solid white;}
 #menu-button {display: none;}
@@ -35,7 +35,7 @@ h3.clickable {cursor: pointer;}
 
 .h3-p-list {margin-left: 3%;}
 
-#display_hidden {visibility: hidden;}
+/*#display_hidden {visibility: hidden;}*/
 
 p {margin: 1px;}
 h3#zero{counter-reset: licznik;}
@@ -74,7 +74,7 @@ footer p {margin: 0 0 0 0;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-	/*resolution test*/header h1 a {color: blue;}
+	/*resolution testheader h1 a {color: blue;}*/
 	header {width: 100%;display: inline-block;}
 	header * {font-size: 95%;}
 	.big {display: none;}
@@ -89,9 +89,9 @@ footer p {margin: 0 0 0 0;}
 }
 
 @media screen and (max-width: 480px) {
-	/*resolution test*/header h1 a {color: green;}
+	/*resolution test header h1 a {color: green;}*/
 	.dir {display: none;}
-
+	header * {font-size: 100%;}
 	nav {width: 100%;display: table;}
 	nav * {width: 100%;}
 	#menu-button {display: initial;color: black; background: white;}
@@ -101,7 +101,7 @@ footer p {margin: 0 0 0 0;}
 	.menu-html a, .menu-show a {text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
 
-	footer {padding-right: 1px;}
+	footer {padding-right: 1px;/*max-width: 100%;*/}
 	#footer-brands-icons {float: right;}
 	li a:before {content: none;}
 	li a:after {content: none;}
