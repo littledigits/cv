@@ -41,8 +41,6 @@ if (isset($_cookie['css'])) {
 <div id="iframe-right">
 
 <h2><i class="fa fa-suitcase"></i> DOŚWIADCZENIE ZAWODOWE</h2>
-
-<br>
 <?php
 function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()">';}
 ?>

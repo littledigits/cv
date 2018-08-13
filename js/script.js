@@ -28,9 +28,9 @@ function selekcja(thisstring) {
 }
 
 function menuShow() {
-	document.getElementById("menu").classList.toggle("show");
-	document.getElementById("menu-button").classList.toggle
+	document.getElementById("menu-js").classList.toggle("menu-show");
 }
+
 function subdirOpenClose1() {
 	document.getElementById("h301i02").classList.toggle("subdir-hidden-visible");
 	document.getElementById("h301div").classList.toggle("subdir-hidden-visible");

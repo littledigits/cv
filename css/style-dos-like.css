@@ -2,18 +2,18 @@
 
 .nc {display: none;}
 
-hr{margin: 0 0;}
+hr{margin: 0;}
 
 body {margin: 1px;}
 header {border-bottom: solid white 1px;}
 header * {font-family: Audiowide;text-align: center;margin: 0;}
 header a {text-decoration: none;}
-/*do testów rozdzielczości*/
-header h1 a {color: orange;}
+/*resolution test*/header h1 a {color: orange;}
+
+nav {border-bottom: 1px solid white;}
 #menu-button {display: none;}
 
-nav {position: sticky; top: 0;z-index: 1;border-bottom: 1px solid white;display: flex;}
-.dropdown {display: none;}
+/*.dropdown {display: none;}*/
 .menu-selected::before{content: "<";}
 .menu-selected::after{content: "/>";}
 
@@ -36,20 +36,6 @@ h3.clickable {cursor: pointer;}
 .h3-p-list {margin-left: 3%;}
 
 #display_hidden {visibility: hidden;}
-
-/*ul {padding: 0 0;margin: 0 0;list-style-type: none;}
-ul li, nav a {float: left;}
-ul li a, nav a {display: block;padding: 0px 0px 0px 10px;}*/
-
-ul.menu {list-style-type: none;padding: 0;margin:0;}
-.menu li {float: left;margin: 0 0 0 15px;}
-.menu li:first-child {margin: 0;}
-.menu a {text-decoration: none;}
-/*.menu a:link {text-decoration: none;}
-.menu a:visited {text-decoration: none;}
-.menu a:hover {text-decoration: none;}
-.menu a:active {text-decoration: none;}
-.menu a:focus {text-decoration: none;}*/
 
 p {margin: 1px;}
 h3#zero{counter-reset: licznik;}
@@ -77,53 +63,48 @@ footer p {margin: 0 0 0 0;}
 
 .skillbar {background-color:black;color:white;text-align:center;z-index: 1;font-family: Audiowide;}
 
-.home{bottom: px;}
+@media screen and (min-width: 769px) {
+	nav {position: sticky; top: 0;z-index: 1;display: flex;}
 
-@media screen and (max-width: 768px) {
-	/*do testów rozdzielczości*/header h1 a {color: blue;}
+	.menu-js {display: block;}
+	ul.menu-html, ul.menu-js {list-style-type: none;padding: 0;margin:0;}
+	.menu-html li, .menu-js li {float: left;margin: 0 0 0 15px;}
+	.menu-html li:first-child, .menu-js li:first-child {margin: 0;}
+	.menu-html a, .menu-js a {text-decoration: none;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	/*resolution test*/header h1 a {color: blue;}
 	header {width: 100%;display: inline-block;}
 	header * {font-size: 95%;}
 	.big {display: none;}
 	nav {width: 100%;display: table;}
-	nav * {display: block;width: 100%;}
+	nav * {width: 100%;}
 	#menu-button {display: initial;color: black; background: white;}
-	ul.menu {display: none;}
-	ul.menu {list-style-type: none;padding: 0;margin:0;}
-	.menu li {margin: 0;text-align: center;}
-	.menu a {text-decoration: none;}
-	nav:hover .menu {display: initial;}
-	#nav-dimension:hover .menu {display: none;}
-	ul.show {display: block;}
-	/**/
+	ul.menu-html, ul.menu-js {display: none;}
+	ul.menu-html, .menu-show {list-style-type: none;padding: 0;margin:0;}
+	.menu-html li, .menu-show li {margin: 0;text-align: center;}
+	.menu-html a, .menu-show a {text-decoration: none;display: inline-block;}
+	nav:hover .menu-html, ul.menu-show {display: block;}
 }
 
 @media screen and (max-width: 480px) {
-	/*do testów rozdzielczości*/header h1 a {color: green;}
-	header {text-align: left;height: auto;}
-	header h1 {font-size: 125%;height: auto;margin: 1px 1px;}
-	nav {border-bottom: none;}
-	h2{margin: 1px 1px;}
-	h3{margin: 1px 1px;}
-	.menu{margin: 1px 1px;}
+	/*resolution test*/header h1 a {color: green;}
 	.dir {display: none;}
-	ul {padding: 0 0;float: left;}
-	ul li {padding: 0 0;clear: left;}
-	ul li a {padding: 0px 0px 0px 10px;}
-	iframe{float: left;width: 430px;}
-	p {margin: 3px 3px;}
+
+	nav {width: 100%;display: table;}
+	nav * {width: 100%;}
+	#menu-button {display: initial;color: black; background: white;}
+	ul.menu-html, ul.menu-js {display: none;}
+	ul.menu-html, .menu-show {list-style-type: none;padding: 0;margin:0;}
+	.menu-html li, .menu-show li {margin: 0;text-align: center;}
+	.menu-html a, .menu-show a {text-decoration: none;display: inline-block;}
+	nav:hover .menu-html, ul.menu-show {display: block;}
+
 	footer {padding-right: 1px;}
 	#footer-brands-icons {float: right;}
 	li a:before {content: none;}
 	li a:after {content: none;}
-	
-	.dropdown {display: all;}
-	.dropdown {position: relative;display: inline-block;}
-	.dropdown-content {display: none;position: absolute;background-color: white;width: 100%;padding: 0 0;z-index: 1;}
-	.dropdown:hover .dropdown-content {display: block;}
-	.dropdown-content li {}
-	.dropdown-content a {color: black;background-color: white;display: block;padding: 0px 10px 0px 10px;text-decoration: none;}
-	.mid-big {display: none;}
 
-	.footer-margin
-	.bottom-p {display: none;}
+	.big, .mid-big, .bottom-p {display: none;}
 }

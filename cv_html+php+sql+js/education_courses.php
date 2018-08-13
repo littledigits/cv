@@ -71,6 +71,7 @@ if (isset($_cookie['css'])) {
 		<abbr title="podgląd dokumentu">
 			<a href="../pdf/Dyplom Microsoft Excel dla Zaawansowanych.pdf" target="_blank">
 				<i class="fas fa-file-pdf"></i>
+			</a>
 		</abbr>
 	</p>
 	</div>
