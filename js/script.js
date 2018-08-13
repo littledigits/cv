@@ -27,8 +27,10 @@ function selekcja(thisstring) {
 	xhttp.send();
 }
 
+if(document.body.clientWidth < 769) {document.getElementById("menu-js").classList.remove("menu-js");document.getElementById("menu-js").classList.add("menu-html");}
+
 function menuShow() {
-	document.getElementById("menu-js").classList.toggle("menu-show");
+	if(document.body.clientWidth > 768) {document.getElementById("menu-js").classList.toggle("menu-show");}
 }
 
 function subdirOpenClose1() {

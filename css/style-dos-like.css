@@ -98,7 +98,7 @@ footer p {margin: 0 0 0 0;}
 	ul.menu-html, ul.menu-js {display: none;}
 	ul.menu-html, .menu-show {list-style-type: none;padding: 0;margin:0;}
 	.menu-html li, .menu-show li {margin: 0;text-align: center;}
-	.menu-html a, .menu-show a {text-decoration: none;display: inline-block;}
+	.menu-html a, .menu-show a {margin-top: 5%;margin-bottom: 5%;text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
 
 	footer {padding-right: 1px;/*max-width: 100%;*/}
