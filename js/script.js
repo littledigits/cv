@@ -27,15 +27,9 @@ function selekcja(thisstring) {
 	xhttp.send();
 }
 
-//if(document.body.clientWidth < 769) {document.getElementById("menu-js").classList.remove("menu-js");document.getElementById("menu-js").classList.add("menu-html");}
-
-
 function menuShow() {
-	//if(document.body.clientWidth > 768) {document.getElementById("menu-js").classList.toggle("menu-show");}
-	//$('#menu-button').on('click touchstart', function() {$('#menu-js').toggleClass('menu-show');});
-	//$('#menu-button').on('click', function() {$('#menu-js').toggleClass('menu-show');});
-	document.getElementById("menu-js").classList.toggle("menu-show");
-	
+	//document.getElementById("menu-js").classList.toggle("menu-show");
+	$(document).ready(function() {$("#menu-js").toggleClass("menu-show");})
 }
 
 function subdirOpenClose1() {
