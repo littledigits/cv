@@ -22,11 +22,8 @@ article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;
 
 #iframe-left {display: none;}
 
-.dir:before {content: "<";}
-.dir:after {content: ">";}
-
-h2:before {content: "<SUBDIR> ";font-size: 70%;}
-h2:after {content: ;}
+/*.dir:before {content: "<";}
+.dir:after {content: ">";}*/
 
 h3.clickable {cursor: pointer;}
 
@@ -45,7 +42,7 @@ p#zero{counter-reset: licznik;}
 p#zero:before{content: "[0] "}
 p#other::before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
 
-.home{border:solid 1px white;padding-left: 1px;position: fixed;right: 1px;top: 500px;text-decoration: none;}
+.home{display: none;/*border:solid 1px white;padding-left: 1px;position: fixed;right: 1px;top: 500px;text-decoration: none;*/}
 
 footer {clear: both;height: auto;color: white;background-color: black;position: fixed;bottom: 0; right: 0;width: 100%;border-top: 1px solid white;}
 footer p {margin: 0 0 0 0;}
@@ -65,16 +62,18 @@ footer p {margin: 0 0 0 0;}
 
 @media screen and (min-width: 769px) {
 	nav {position: sticky; top: 0;z-index: 1;display: flex;}
-
 	.menu-js {display: block;}
 	ul.menu-html, ul.menu-js {list-style-type: none;padding: 0;margin:0;}
 	.menu-html li, .menu-js li {float: left;margin: 0 0 0 15px;}
 	.menu-html li:first-child, .menu-js li:first-child {margin: 0;}
 	.menu-html a, .menu-js a {text-decoration: none;}
+	h2:before {content: "<SUBDIR> ";font-size: 70%;}
+	h2:after {content: ;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	/*resolution testheader h1 a {color: blue;}*/
+	* {font-size: 105%}
 	header {width: 100%;display: inline-block;}
 	header * {font-size: 95%;}
 	.big {display: none;}
@@ -84,12 +83,14 @@ footer p {margin: 0 0 0 0;}
 	ul.menu-html, ul.menu-js {display: none;}
 	ul.menu-html, .menu-show {list-style-type: none;padding: 0;margin:0;}
 	.menu-html li, .menu-show li {margin: 0;text-align: center;}
-	.menu-html a, .menu-show a {text-decoration: none;display: inline-block;}
+	.menu-html a, .menu-show a {margin-top: 1%; margin-bottom: 1%; padding: 2% 0;text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
+	.bottom-p {display: none;}
 }
 
 @media screen and (max-width: 480px) {
 	/*resolution test header h1 a {color: green;}*/
+	* {font-size: 105%}
 	.dir {display: none;}
 	header * {font-size: 100%;}
 	nav {width: 100%;display: table;}
