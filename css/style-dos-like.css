@@ -1,4 +1,4 @@
-* {font-family: Lato, Share Tech Mono, Lucida Console;color: white;background-color: black;}
+* {font-family: Lato, Share Tech Mono, Lucida Console;color: white;background-color: black;font-size: 105%;}
 
 .nc {display: none;}
 
@@ -66,16 +66,15 @@ footer p {margin: 0 0 0 0;}
 	ul.menu-html, ul.menu-js {list-style-type: none;padding: 0;margin:0;}
 	.menu-html li, .menu-js li {float: left;margin: 0 0 0 15px;}
 	.menu-html li:first-child, .menu-js li:first-child {margin: 0;}
-	.menu-html a, .menu-js a {text-decoration: none;}
+	.menu-html a, .menu-js a {text-decoration: none;font-size: 90%;}
 	h2:before {content: "<SUBDIR> ";font-size: 70%;}
 	h2:after {content: ;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	/*resolution testheader h1 a {color: blue;}*/
-	* {font-size: 105%}
 	header {width: 100%;display: inline-block;}
-	header * {font-size: 95%;}
+	/*header * {font-size: 95%;}*/
 	.big {display: none;}
 	nav {width: 100%;display: table;}
 	nav * {width: 100%;}
@@ -90,9 +89,8 @@ footer p {margin: 0 0 0 0;}
 
 @media screen and (max-width: 480px) {
 	/*resolution test header h1 a {color: green;}*/
-	* {font-size: 105%}
 	.dir {display: none;}
-	header * {font-size: 100%;}
+	/*header * {font-size: 100%;}*/
 	nav {width: 100%;display: table;}
 	nav * {width: 100%;}
 	#menu-button {display: initial;color: black; background: white;}
