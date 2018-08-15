@@ -1,4 +1,4 @@
-<button class="navigator" onmouseover="menuOpen()">css menu</button>
+<button class="navigator" onclick="menuOpen()">css menu</button>
 		<div id="menu-content" class="menu-content">
 			<button onclick="setCookieDos()" id="button-dos">dos</button>
 			<button onclick="setCookieNc()" id="button-nc">norton commander</button>
