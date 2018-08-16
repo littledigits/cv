@@ -92,9 +92,11 @@ else include 'footer.txt';
 <script>
 	<?php include $url.'js/script.js';?>
 	<?php include $url.'js/jquery-3.3.1.js';?>
-	$("h2").slideDown(1000, function() {
-		$("p").fadeIn(1000);
+	$(document).ready(function() {
+		$("h2").slideDown(1000, function() {
+			$("#iframe-right p").fadeIn(1000);
 		});
+	});
 </script>
 
 </body>

@@ -113,8 +113,10 @@ if (isset($_cookie['css'])) {
 <script>
 	<?php include $urladdres.'js/script.js';?>
 	<?php include $urladdres.'js/jquery-3.3.1.js';?>
-	$("h2").slideDown(1000);
-	$("#iframe-right p").fadeIn(2000);
+	$(document).ready(function() {
+		$("h2").slideDown(1000);
+		$("#iframe-right p").fadeIn(2000);
+	});
 </script>
 
 </body>
