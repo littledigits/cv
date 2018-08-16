@@ -4,6 +4,7 @@ include $url.'meta.txt';
 ?>
 <!doctype html>
 <html lang="pl-PL">
+<link rel="stylesheet" href ="css/style-dos-like.css">
 <link rel="shortcut icon" href="images/logo.png">
 <title></title>
 <body>

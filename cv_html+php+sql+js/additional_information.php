@@ -52,12 +52,12 @@ if (isset($_cookie['css'])) {
 
 				if($icone!=""){$icone="<i class='fa $icone'></i>";}
 				if($description!=""){$description=" $description<br>";}
-				print "[$key] $icone$description";
+				print "<p>[$key] $icone$description</p>";
 				?>
 
 				<h2><i class="fas fa-user-plus"></i> ZAINTERESOWANIA</h2>
 				<?php
-				mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
+				//mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 				mysql_query("SET CHARSET utf8");
 				mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
 				$wynik = mysql_query ("SELECT * FROM additional_information_interests") or die ("die przy zapytaniu");
@@ -69,12 +69,12 @@ if (isset($_cookie['css'])) {
 		
 				if($icone!=""){$icone="<i class='fa $icone'></i>";}
 				if($description!=""){$description=" $description<br>";}
-				print "[$key] $icone$description";}
+				print "<p>[$key] $icone$description</p>";}
 				?>
 
 				<h2><i class="fa fa-bullhorn"></i> JĘZYKI OBCE</h2>
 				<?php
-				mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
+				//mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 				mysql_query("SET CHARSET utf8");
 				mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
 				$wynik = mysql_query ("SELECT * FROM additional_information_languages") or die ("die przy zapytaniu");
@@ -84,7 +84,7 @@ if (isset($_cookie['css'])) {
 				$description = $rekord['description'];
 		
 				if($description!=""){$description="$description<br>";}
-				print "[$key] $description";}
+				print "<p>[$key] $description</p>";}
 				?>
 			</div>
 		</article>
