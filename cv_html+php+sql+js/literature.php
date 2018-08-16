@@ -4,10 +4,10 @@ $url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
 include $url.'meta.txt';
 
 if(isset($_COOKIE['css'])){
-	if($_COOKIE['css']=="dos") print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
-	elseif($_COOKIE['css']=="nc") print '<link rel="stylesheet" type="text/css" href="../css/style-norton-commander-like.css">';
+	if($_COOKIE['css']=="dos") echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
+	elseif($_COOKIE['css']=="nc") echo '<link rel="stylesheet" type="text/css" href="../css/style-norton-commander-like.css">';
 }
-else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
+else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
 ?>
 <!doctype html>
 <html lang="pl-PL">
@@ -18,7 +18,7 @@ else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.c
 <?php
 if (isset($_COOKIE['css'])) {
 	if($_COOKIE['css']=="dos") include $url.'widgets/header.php';
-	elseif($_COOKIE['css']=="nc") print '';
+	elseif($_COOKIE['css']=="nc") echo '';
 } else {include $url.'widgets/header.php';
 }
 ?>
@@ -27,7 +27,7 @@ if (isset($_COOKIE['css'])) {
 <?php
 if (isset($_cookie['css'])) {
 	if($_COOKIE['css']=="dos") include 'nav.txt';
-	elseif($_COOKIE['css']=="nc") print '';
+	elseif($_COOKIE['css']=="nc") echo '';
 } else {
 	include 'nav.txt';
 }
@@ -39,7 +39,7 @@ if (isset($_cookie['css'])) {
 			<?php include 'nav.html'; ?>
 		</div>
 <div id="iframe-right">
-	<h2 id="LITERATURA"><i class="fa fa-book"></i> LITERATURA</h2>
+	<h2 id="LITERATURA" style="display: none;"><i class="fa fa-book"></i> LITERATURA</h2>
 <!--?php
 //przeczytane
 $teraz=140;//ilość dotychczas przeczytanych stron
@@ -64,7 +64,7 @@ $procent=round($teraz/$max*100);
 	if($read!=""){$read="<i class='fa fa-check-square'></i> ";}else{$read="<i class='fas fa-square'></i> ";}
 	if($title!=""){$title="<cite>$title</cite>";}
 
-	print("<p>[$key] $read '$title' - $author</p>");
+	echo '<p style="display: none;">['.$key.'] '.$read .'"'.$title.'" - '.$author.'</p>';
 	}
 ?>
 </div>
@@ -77,7 +77,7 @@ $procent=round($teraz/$max*100);
 if (isset($_COOKIE['css'])) {
 	if ($_COOKIE['css']=="dos") include 'footer.txt';
 	elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
-	else print '';
+	else echo '';
 }
 else include 'footer.txt';
 ?>
@@ -91,7 +91,10 @@ else include 'footer.txt';
 
 <script>
 	<?php include $url.'js/script.js';?>
-	<?php include $url.'js/jquery-3.3.1.js';?>	
+	<?php include $url.'js/jquery-3.3.1.js';?>
+	$("h2").slideDown(1000, function() {
+		$("p").fadeIn(1000);
+		});
 </script>
 
 </body>

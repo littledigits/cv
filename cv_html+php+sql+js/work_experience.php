@@ -40,9 +40,9 @@ if (isset($_cookie['css'])) {
 		</div>
 <div id="iframe-right">
 
-<h2><i class="fa fa-suitcase"></i> DOŚWIADCZENIE ZAWODOWE</h2>
+<h2 style="display: none;"><i class="fa fa-suitcase"></i> DOŚWIADCZENIE ZAWODOWE</h2>
 <?php
-function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()">';}
+function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()" style="display: none;">';}
 ?>
 <?php echo h3('1');?>
 01.08.2017 <i class="fa fa-arrow-right"></i> <?php echo date("d.m.Y")." r."?> (<ins>obecnie</ins>): <ins><abbr title="obecnie">webmaster</abbr></ins> 
@@ -128,6 +128,9 @@ else include 'footer.txt';
 <script>
 	<?php include $url.'js/script.js';?>
 	<?php include $url.'js/jquery-3.3.1.js';?>
+	$("h2").slideDown(1000, function() {
+		$("h3").fadeIn(1000);
+	});
 </script>
 
 </body>

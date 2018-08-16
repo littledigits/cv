@@ -4,10 +4,10 @@ $urladdres=$_SERVER['DOCUMENT_ROOT'].'/cv/';
 include $urladdres.'meta.txt';
 
 if(isset($_COOKIE['css'])){
-	if($_COOKIE['css']=="dos") print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
-	elseif($_COOKIE['css']=="nc") print '<link rel="stylesheet" type="text/css" href="../css/style-norton-commander-like.css">';
+	if($_COOKIE['css']=="dos") echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
+	elseif($_COOKIE['css']=="nc") echo '<link rel="stylesheet" type="text/css" href="../css/style-norton-commander-like.css">';
 }
-else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
+else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
 ?>
 <!doctype html>
 <html lang="pl-PL">
@@ -18,7 +18,7 @@ else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.c
 <?php
 if (isset($_COOKIE['css'])) {
 	if($_COOKIE['css']=="dos") include $urladdres.'widgets/header.php';
-	elseif($_COOKIE['css']=="nc") print '';
+	elseif($_COOKIE['css']=="nc") echo '';
 } else {include $urladdres.'widgets/header.php';
 }
 ?>
@@ -27,7 +27,7 @@ if (isset($_COOKIE['css'])) {
 <?php
 if (isset($_cookie['css'])) {
 	if($_COOKIE['css']=="dos") include 'nav.txt';
-	elseif($_COOKIE['css']=="nc") print '';
+	elseif($_COOKIE['css']=="nc") echo '';
 } else {
 	include $urladdres.'cv_html+php+sql+js/nav.txt';
 }
@@ -38,8 +38,11 @@ if (isset($_cookie['css'])) {
 			<div id="iframe-left">
 				<?php include "nav.html"; ?>
 			</div>
-			<div id="iframe-right"><h2><i class="fas fa-ellipsis-h"></i> INNE</h2>
+			<div id="iframe-right">
+				<h2 style="display: none;"><i class="fas fa-ellipsis-h"></i> INNE</h2>
 				<?php
+				$style=' style="display: none;"';
+
 				mysql_connect ("littledigits.pl", "kbt_cv", "testing") or die ("die przy łączeniu z serwerem");
 				mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 				mysql_query("SET CHARSET utf8");
@@ -52,10 +55,10 @@ if (isset($_cookie['css'])) {
 
 				if($icone!=""){$icone="<i class='fa $icone'></i>";}
 				if($description!=""){$description=" $description<br>";}
-				print "<p>[$key] $icone$description</p>";
+				echo '<p'.$style.'>['.$key.'] '.$icone.$description.'</p>';
 				?>
 
-				<h2><i class="fas fa-user-plus"></i> ZAINTERESOWANIA</h2>
+				<h2 style="display: none;"><i class="fas fa-user-plus"></i> ZAINTERESOWANIA</h2>
 				<?php
 				//mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 				mysql_query("SET CHARSET utf8");
@@ -69,10 +72,10 @@ if (isset($_cookie['css'])) {
 		
 				if($icone!=""){$icone="<i class='fa $icone'></i>";}
 				if($description!=""){$description=" $description<br>";}
-				print "<p>[$key] $icone$description</p>";}
+				echo '<p'.$style.'>['.$key.'] '.$icone.$description.'</p>';}
 				?>
 
-				<h2><i class="fa fa-bullhorn"></i> JĘZYKI OBCE</h2>
+				<h2 style="display: none;"><i class="fa fa-bullhorn"></i> JĘZYKI OBCE</h2>
 				<?php
 				//mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 				mysql_query("SET CHARSET utf8");
@@ -84,7 +87,7 @@ if (isset($_cookie['css'])) {
 				$description = $rekord['description'];
 		
 				if($description!=""){$description="$description<br>";}
-				print "<p>[$key] $description</p>";}
+				echo '<p'.$style.'>['.$key.'] '.$description.'</p>';}
 				?>
 			</div>
 		</article>
@@ -95,7 +98,7 @@ if (isset($_cookie['css'])) {
 		if (isset($_COOKIE['css'])) {
 		if ($_COOKIE['css']=="dos") include 'footer.txt';
 		elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
-		else print '';
+		else echo '';
 		}
 		else include 'footer.txt';
 		?>
@@ -109,7 +112,9 @@ if (isset($_cookie['css'])) {
 
 <script>
 	<?php include $urladdres.'js/script.js';?>
-	<?php include $urladdres.'js/jquery-3.3.1.js';?>	
+	<?php include $urladdres.'js/jquery-3.3.1.js';?>
+	$("h2").slideDown(1000);
+	$("#iframe-right p").fadeIn(2000);
 </script>
 
 </body>
