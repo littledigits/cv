@@ -52,7 +52,7 @@ function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()" 
 <p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> prowadzenie stron internetowych WordPress <i class="fab fa-wordpress"></i></p>
 <p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> administracja platformą e-learning Moodle</p>
 <p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> administracja kontem www</p>
-<p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> dotychczasowe projekty: <i class="fa fa-link"></i> <a href="http://agencjamojedziecko.pl/" target="_blank">agencjamojedziecko.pl</a>, <i class="fa fa-link"></i> <a href="http://crossfitboxekipa.pl" target="_blank">crossfitboxekipa.pl</a></p>
+<p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> dotychczasowe projekty: <i class="fa fa-link"></i> <a href="http://agencjamojedziecko.pl/" target="_blank">agencjamojedziecko.pl</a>, <i class="fa fa-link"></i> <a href="http://crossfitboxekipa.pl" target="_blank">crossfitboxekipa.pl</a>, <a href="http://moodle.agencjamojedziecko.pl/eszkola" target="_blank"><i class="fa fa-link"></i> Moodle</a></p>
 </div>
 
 <?php h3('2');?>
