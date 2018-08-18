@@ -59,17 +59,19 @@ $rekord = mysql_fetch_assoc($wynik);
 	$e_mail=$rekord['e-mail'];
 	$skype=$rekord['skype'];
 	$facebook=$rekord['facebook'];
+	$github=$rekord['git'];
 
-	if($identity!=""){$identity='<p'.$style.'><i class="fas fa-id-card"></i> '.$identity.'<p>';}
+	if($identity!="") {$identity='<p'.$style.'><i class="fas fa-id-card"></i> '.$identity.'<p>';}
 	if($www!=""){$www='<p'.$style.'><i class="fa fa-industry"></i> <a href="http://$www" target="_blank">'.$www.'</a></p>';}
 	if($birthday!=""){$birthday='<p'.$style.'><i class="fa fa-birthday-cake"></i> '.$birthday.'</p>';}
 	if($address!=""){$address='<p'.$style.'><i class="fa fa-globe"></i> '.$address.'</p>';}
 	if($phone!=""){$phone='<p'.$style.'><i class="fa fa-phone"></i> '.$phone.'</p>';}
 	if($e_mail!=""){$e_mail='<p'.$style.'><i class="fa fa-at"></i> <a href="mailto:'.$e_mail.'">'.$e_mail.'</a></p>';}
-	if($skype!=""){$skype='<p'.$style.'>'.$skype.'</p>';}
-	if($facebook!=""){$facebook='<p'.$style.'>'.$facebook.'</p>';}
+	if($skype!=""){$skype='<p'.$style.'> '.$skype.'</p>';}
+	if($facebook!=""){$facebook='<p'.$style.'> '.$facebook.'</p>';}
+	if($github!=""){$github='<p'.$style.'><i class="fab fa-github"></i> <a href="'.$github.'" target="_blank">repozytorium GitHub</a></p>';}
 
-echo "$identity$www$birthday$address$phone$e_mail$skype$facebook";
+echo "$identity$www$birthday$address$phone$e_mail$skype$facebook$github";
 ?>
 
 <br>
