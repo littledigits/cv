@@ -45,7 +45,7 @@ if (isSet($_cookie['css'])) {
 <?php
 $style=' style="display: none;"';
 
-mysql_connect ("littledigits.pl", "kbt_cv", "testing") or die ("die przy łączeniu z serwerem");
+$connection=mysql_connect ("littledigits.pl", "kbt_cv", "testing") or die ("die przy łączeniu z serwerem");
 mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 mysql_query("SET CHARSET utf8");
 mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
@@ -74,6 +74,8 @@ $rekord = mysql_fetch_assoc($wynik);
 	if($linkedin!=""){$linkedin='<p'.$style.'><i class="fab fa-linkedin"></i> <a href="'.$linkedin.'" target="_blank">LinkedIn</a></p>';}
 
 echo "$identity$www$birthday$address$phone$e_mail$skype$facebook$github$linkedin";
+
+mysql_close($connection);
 ?>
 
 <br>

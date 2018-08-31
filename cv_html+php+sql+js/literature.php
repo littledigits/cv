@@ -49,7 +49,7 @@ $procent=round($teraz/$max*100);
 <!--?php echo $procent;?>%)-->
 
 <?php
-	mysql_connect("littledigits.pl", "kbt_cv", "testing") or die ("die przy połączeniu z serwerem");
+	$connection=mysql_connect("littledigits.pl", "kbt_cv", "testing") or die ("die przy połączeniu z serwerem");
 	mysql_select_db("kbt_cv") or die ("die przy łączeniu z bazą");
 	mysql_query("SET CHARSET utf8");
 	mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
@@ -66,6 +66,8 @@ $procent=round($teraz/$max*100);
 
 	echo '<p style="display: none;">['.$key.'] '.$read .'"'.$title.'" - '.$author.'</p>';
 	}
+
+	mysql_close($connection);
 ?>
 </div>
 </article>

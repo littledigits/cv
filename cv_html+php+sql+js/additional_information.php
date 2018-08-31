@@ -43,7 +43,7 @@ if (isset($_cookie['css'])) {
 				<?php
 				$style=' style="display: none;"';
 
-				mysql_connect ("littledigits.pl", "kbt_cv", "testing") or die ("die przy łączeniu z serwerem");
+				$connection=mysql_connect ("littledigits.pl", "kbt_cv", "testing") or die ("die przy łączeniu z serwerem");
 				mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
 				mysql_query("SET CHARSET utf8");
 				mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
@@ -88,6 +88,8 @@ if (isset($_cookie['css'])) {
 		
 				if($description!=""){$description="$description<br>";}
 				echo '<p'.$style.'>['.$key.'] '.$description.'</p>';}
+				
+				mysql_close($connection);
 				?>
 			</div>
 		</article>
