@@ -60,6 +60,7 @@ $rekord = mysql_fetch_assoc($wynik);
 	$skype=$rekord['skype'];
 	$facebook=$rekord['facebook'];
 	$github=$rekord['git'];
+	$linkedin=$rekord['linkedin'];
 
 	if($identity!="") {$identity='<p'.$style.'><i class="fas fa-id-card"></i> '.$identity.'<p>';}
 	if($www!=""){$www='<p'.$style.'><i class="fa fa-industry"></i> <a href="http://$www" target="_blank">'.$www.'</a></p>';}
@@ -70,8 +71,9 @@ $rekord = mysql_fetch_assoc($wynik);
 	if($skype!=""){$skype='<p'.$style.'> '.$skype.'</p>';}
 	if($facebook!=""){$facebook='<p'.$style.'> '.$facebook.'</p>';}
 	if($github!=""){$github='<p'.$style.'><i class="fab fa-github"></i> <a href="'.$github.'" target="_blank">repozytorium GitHub</a></p>';}
+	if($linkedin!=""){$linkedin='<p'.$style.'><i class="fab fa-linkedin"></i> <a href="'.$linkedin.'" target="_blank">LinkedIn</a></p>';}
 
-echo "$identity$www$birthday$address$phone$e_mail$skype$facebook$github";
+echo "$identity$www$birthday$address$phone$e_mail$skype$facebook$github$linkedin";
 ?>
 
 <br>
