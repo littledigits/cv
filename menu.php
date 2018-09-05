@@ -17,7 +17,10 @@ include $url.'meta.txt';
 function indexinfo($folder, $opis, $disabled) {
 	if ($folder=="html") {
 		$target=$folder.'/address.html';
-	} else {
+	} elseif ($folder=="bootstrap") {
+		$target=$folder.'/printing.html';
+	} 
+	else {
 		$target=$folder.'/address.php';
 	}
 	if ($disabled=='') {
@@ -26,9 +29,9 @@ function indexinfo($folder, $opis, $disabled) {
 		echo '<p><del>'.strtoupper($folder)."</p><p>$opis. Ostatnio zmieniony ".date("d.m.Y H:i:s",fileatime("cv_".$folder)).'.</del></p><br>';
 	}
 }
-//indexinfo("bootstrap", "W przyszłości");
 indexinfo ("html", "Czysty HTML z dodatkiem Font awesome", '');
 indexinfo ("html+php+sql+js", "Aktualnie najbardziej zaawansowany wariant", '');
+indexinfo("bootstrap", "Pierwsze podejście. Docelowo ta wersja cv ma słuzyć do wydruku lub tworzenia pliku pdf", '');
 ?>
 </nav>
 <footer>
