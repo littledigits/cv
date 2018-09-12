@@ -1,7 +1,12 @@
 <?php
-$urladdres=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+//$urladdres=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
+	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+} else {
+	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/';
+}
 
-include $urladdres.'meta.txt';
+include $urladdress.'meta.txt';
 
 if(isset($_COOKIE['css'])){
 	if($_COOKIE['css']=="dos") echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
@@ -17,9 +22,9 @@ else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.cs
 	<header id="header-dimension">
 <?php
 if (isset($_COOKIE['css'])) {
-	if($_COOKIE['css']=="dos") include $urladdres.'widgets/header.php';
+	if($_COOKIE['css']=="dos") include $urladdress.'widgets/header.php';
 	elseif($_COOKIE['css']=="nc") echo '';
-} else {include $urladdres.'widgets/header.php';
+} else {include $urladdress.'widgets/header.php';
 }
 ?>
 	</header>
@@ -29,7 +34,7 @@ if (isset($_cookie['css'])) {
 	if($_COOKIE['css']=="dos") include 'nav.txt';
 	elseif($_COOKIE['css']=="nc") echo '';
 } else {
-	include $urladdres.'cv_html+php+sql+js/nav.txt';
+	include $urladdress.'cv_html+php+sql+js/nav.txt';
 }
 ?>
 	</nav>
@@ -95,7 +100,7 @@ if (isset($_cookie['css'])) {
 		</article>
 
 	<footer id="footer-dimension">
-		<?php include $urladdres.'widgets/css_button.txt';
+		<?php include $urladdress.'widgets/css_button.txt';
 
 		if (isset($_COOKIE['css'])) {
 		if ($_COOKIE['css']=="dos") include 'footer.txt';
@@ -113,8 +118,8 @@ if (isset($_cookie['css'])) {
 	</footer>
 
 <script>
-	<?php include $urladdres.'js/script.js';?>
-	<?php include $urladdres.'js/jquery-3.3.1.js';?>
+	<?php include $urladdress.'js/script.js';?>
+	<?php include $urladdress.'js/jquery-3.3.1.js';?>
 	$(document).ready(function() {
 		$("h2").slideDown(1000);
 		$("#iframe-right p").fadeIn(2000);

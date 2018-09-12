@@ -1,7 +1,12 @@
 <?php
-$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+//$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
+	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+} else {
+	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/';
+}
 
-include $url.'meta.txt';
+include $urladdress.'meta.txt';
 
 if(isset($_COOKIE['css'])){
 	if($_COOKIE['css']=="dos") echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
@@ -17,9 +22,9 @@ else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.cs
 <header id="header-dimension">
 <?php
 if (isset($_COOKIE['css'])) {
-	if($_COOKIE['css']=="dos") include $url.'widgets/header.php';
+	if($_COOKIE['css']=="dos") include $urladdress.'widgets/header.php';
 	elseif($_COOKIE['css']=="nc") echo '';
-} else {include $url.'widgets/header.php';
+} else {include $urladdress.'widgets/header.php';
 }
 ?>
 </header>
@@ -73,7 +78,7 @@ $procent=round($teraz/$max*100);
 </article>
 
 <footer id="footer-dimension">
-<?php include $url.'widgets/css_button.txt';?>
+<?php include $urladdress.'widgets/css_button.txt';?>
 
 <?php
 if (isset($_COOKIE['css'])) {
@@ -92,8 +97,8 @@ else include 'footer.txt';
 </footer>
 
 <script>
-	<?php include $url.'js/script.js';?>
-	<?php include $url.'js/jquery-3.3.1.js';?>
+	<?php include $urladdress.'js/script.js';?>
+	<?php include $urladdress.'js/jquery-3.3.1.js';?>
 	$(document).ready(function() {
 		$("h2").slideDown(1000, function() {
 			$("#iframe-right p").fadeIn(1000);

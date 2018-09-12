@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
-	$urladdress='localhost/cv/menu.php';
+	$urlheaderaddress='localhost/cv/menu.php';
 } else {
-	$urladdress='littledigits.pl/cv/menu.php';
+	$urlheaderaddress='littledigits.pl/menu.php';
 }
-echo '<h1><a class="header-href" href="http://'.$urladdress.'">www:\littleDIGITS.pl\CURRICULUM VITAE\</a></h1>';
+echo '<h1><a class="header-href" href="http://'.$urlheaderaddress.'">www:\littleDIGITS.pl\CURRICULUM VITAE\</a></h1>';
 ?>

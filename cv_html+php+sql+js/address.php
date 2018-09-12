@@ -1,7 +1,12 @@
 <?php
-$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+//$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
+	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/cv/';
+} else {
+	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/';
+}
 
-include $url.'meta.txt';
+include $urladdress.'meta.txt';
 
 if(isSet($_COOKIE['css'])){
 	if($_COOKIE['css']=="dos") echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
@@ -11,15 +16,15 @@ else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.cs
 ?>
 <!doctype html>
 <html lang="pl-PL">
-<title>DANE PODSTAWOWE</title>
 <link rel="shortcut icon" href="../images/logo.png">
+<title>DANE PODSTAWOWE</title>
 <body>
 	<header id="header-dimension">
 <?php
 if (isSet($_COOKIE['css'])) {
-	if($_COOKIE['css']=="dos") include $url.'widgets/header.php';
+	if($_COOKIE['css']=="dos") include $urladdress.'widgets/header.php';
 	elseif($_COOKIE['css']=="nc") echo '';
-} else {include $url.'widgets/header.php';
+} else {include $urladdress.'widgets/header.php';
 }
 ?>
 	</header>
@@ -88,7 +93,7 @@ mysql_close($connection);
 </article>
 
 <footer id="footer-dimension">
-<?php include $url.'widgets/css_button.txt';?>
+<?php include $urladdress.'widgets/css_button.txt';?>
 
 <?php
 if (isSet($_COOKIE['css'])) {
@@ -107,8 +112,8 @@ else include 'footer.txt';
 </footer>
 
 <script>
-	<?php include $url.'js/script.js';?>
-	<?php include $url.'js/jquery-3.3.1.js';?>	
+	<?php include $urladdress.'js/script.js';?>
+	<?php include $urladdress.'js/jquery-3.3.1.js';?>	
 	$(document).ready(function() {
 		$("h2").slideDown(1000);
 		$("#iframe-right p").fadeIn(1000);

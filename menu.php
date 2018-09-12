@@ -1,6 +1,5 @@
 <?php
-$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
-include $url.'meta.txt';
+include 'meta.txt';
 ?>
 <!doctype html>
 <html lang="pl-PL">
@@ -36,7 +35,7 @@ indexinfo("bootstrap", "Pierwsze podejście. Docelowo ta wersja cv ma słuzyć d
 </nav>
 <footer>
 <?php
-include $url.'cv_html+php+sql+js/footer.txt';
+include 'cv_html+php+sql+js/footer.txt';
 ?>
 </footer>
 </body>
