@@ -1,5 +1,5 @@
 <form name="navigator" class="navigator" method="get">
-	<input type="text" name="" id="navigator_adress" class="navigator" value=<?php echo '"'."littleDIGITS.pl/".basename($_SERVER['SCRIPT_FILENAME'], ".php").">".'"';?>>
+	<input type="text" name="" id="navigator_adress" class="navigator" value=<?php echo 'littleDIGITS.pl/'.basename($_SERVER['SCRIPT_FILENAME'], ".php");?>>
 	<input type="submit" name="submit" class="navigator" value="enter" >
 	<select class="navigator">
 		<option class="navigator">help:</option>

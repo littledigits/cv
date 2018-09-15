@@ -1,6 +1,6 @@
 * {font-family: Coda, courier new;color: white;background-color: blue;}
 
-body {margin: 0 0;}
+body {margin: 0;}
 
 #iframe-left {border-style: double;}
 #iframe-right {overflow: auto;border-style: double;}
@@ -34,6 +34,7 @@ hr {display: none;}
 .header-href:hover .header-href-content {display: inline;}
 .header-href-content p {margin: unset;background-color: black;}
 
+footer {padding: 1px 0 0 0;}
 footer h1 {margin: 0 0;background-color: black;}
 
 /*ul {padding: 0 0;margin: 0 0;list-style-type: none;}*/
@@ -41,8 +42,8 @@ footer h1 {margin: 0 0;background-color: black;}
 .pointer {cursor: pointer;}
 
 article {clear: both;padding: 5px 0 0 0;overflow: auto;}
-#iframe-left {overflow: auto;display: inline-block;width: 49%;height: 87%;background-color: blue; position: absolute; top: 0px;left: 0px;padding: 2px 2px;z-index: 1;}
-#iframe-right {width: 49%;height: 87%; background-color: blue;position: absolute; top: 0px;right: 0px;padding: 2px 2px;z-index: 1;}
+#iframe-left {overflow: auto;display: inline-block;width: 49%;height: 89%;background-color: blue; position: absolute; top: 0px;left: 0px;padding: 2px 2px;z-index: 1;}
+#iframe-right {width: 49%;height: 89%;background-color: blue;position: absolute; top: 0px;right: 0px;padding: 2px 2px;z-index: 1;}
 
 .menu-col-name {float: left;height: 100%;width: auto;border-right: 2px solid white;}
 .menu-col-size {float: left;height: 100%;width: auto;border-right: 2px solid white;}
@@ -69,8 +70,6 @@ footer {clear: both;height: auto;color: white;background-color: black;position: 
 footer p {margin: 0 0 0 0;}
 
 }
-
-.skillbar {}
 
 @media screen and (max-width: 768px) {
 	h1 {color: yellow;font-size: 90%;}

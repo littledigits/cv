@@ -1,5 +1,5 @@
 <?php
-include 'meta.txt';
+include 'meta.php';
 ?>
 <!doctype html>
 <html lang="pl-PL">
