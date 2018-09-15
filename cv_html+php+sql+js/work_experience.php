@@ -5,7 +5,7 @@ if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
 	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/';
 }
 
-include $urladdress.'meta.txt';
+include $urladdress.'meta.php';
 
 if(isset($_COOKIE['css'])){
 	if($_COOKIE['css']=="dos") print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
