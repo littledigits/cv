@@ -1,6 +1,5 @@
 <?php
-$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
-include $url.'meta.txt';
+include 'meta.php';
 ?>
 <!doctype html>
 <html lang="pl">
@@ -36,12 +35,14 @@ include $url.'meta.txt';
 			<div id="p-loading loading-text" class="p-loading"><span>kreatywność</span><span> - ładowanie</span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>dokładność</span><span> - ładowanie </span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>zaangażowanie</span><span> - ładowanie </span></div><br>
+			<div id="p-loading loading-text" class="p-loading"><span>samodzielność</span><span> - ładowanie </span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>wiedza</span><span> - ładowanie </span></div>
 		</div>
 		<div class="loading">
 			<div class="p-loading loading-bar"><span id="creativity-loading" class="span-loading"><span id="creativity-loading-caption" style="visibility: hidden;">100%</span></span></div><br><br>
 			<div class="p-loading loading-bar"><span id="precision-loading" class="span-loading"><span id="precision-loading-caption" style="visibility: hidden;">100%</span></span></div><br><br>
 			<div class="p-loading loading-bar"><span id="engagement-loading" class="span-loading"><span id="engagement-loading-caption" style="visibility: hidden;">100%</span></span></div><br><br>
+			<div class="p-loading loading-bar"><span id="self-reliance-loading" class="span-loading"><span id="self-reliance-loading-caption" style="visibility: hidden;">100%</span></span></div><br><br>
 			<div class="p-loading loading-bar"><span id="knowledge-loading" class="span-loading"><span id="knowledge-loading-caption" style="visibility: hidden;">100%</span></span></div>
 		</div>
 		<br style="clear: left;">
@@ -84,12 +85,15 @@ include $url.'meta.txt';
 		$('#engagement-loading').delay(3400).animate({width: '30%'}, 1400, function(){
 			$('#engagement-loading-caption').css({visibility: 'visible'});
 		});
+		$('#self-reliance-loading').delay(4800).animate({width: '30%'}, 1400, function(){
+			$('#self-reliance-loading-caption').css({visibility: 'visible'});
+		});
 		var x = $('#knowledge-loading');
-		x.delay(4800).animate({width: '30%'}, 4000, function(){
+		x.delay(6200).animate({width: '30%'}, 4000, function(){
 			$('#knowledge-loading-caption').css({visibility: 'visible'});
 		x.css({backgroundColor: 'red'});
 		$('#knowledge-loading-caption').text('wciąż ładuję');
-		$('#motivation-letter').delay(7500).css({display: 'block'});
+		$('#motivation-letter').delay(10200).css({display: 'block'});
 			});
 		});
 	$('#span-nie').mouseover(function(){
