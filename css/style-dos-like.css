@@ -37,6 +37,7 @@ h3.clickable {cursor: pointer;}
 /*#display_hidden {visibility: hidden;}*/
 
 p {margin: 1px;}
+article p {line-height: 170%;}
 h3#zero{counter-reset: licznik;}
 h3#zero:before{content: "[0] "}
 h3#other::before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
