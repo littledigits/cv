@@ -7,9 +7,9 @@ $file=pathinfo($_SERVER['PHP_SELF']);
 for ($i=0; $i < $records; $i++) {
 	
 	if($filestomenu[$i]==$file['basename']){
-		$class='menu-selected';
+		$class='href-menu-selected';
 	} else {
-		$class='';
+		$class='href-menu';
 	}
 
 	$filetoopen=fopen($filestomenu[$i], 'r');

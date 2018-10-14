@@ -14,8 +14,10 @@ nav {border-bottom: 1px solid white;}
 #menu-button {display: none;}
 
 /*.dropdown {display: none;}*/
-.menu-selected::before{content: "<";}
-.menu-selected::after{content: "/>";}
+.href-menu {text-shadow: white 0 0 1px;color: transparent;transition: 1.7s;}
+.href-menu:hover {text-shadow: none;color: white;transition: 0.4s;}
+.href-menu-selected::before{content: "<";}
+.href-menu-selected::after{content: "/>";}
 
 
 article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
