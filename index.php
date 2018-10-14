@@ -18,10 +18,10 @@ include 'meta.php';
 <script src="js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
 	<div style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;display: inline-block;">
-		<a id="href-menu" href="menu.php" style="color: white;text-decoration: none;">[x]</a>
-		<a id="href-reload" href="index.php" style="color: white;text-decoration: none;display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
+		<a id="href-menu" href="menu.php" style="color: white;background-color: black;text-decoration: none;">[x]</a>
+		<a id="href-reload" href="index.php" style="color: white;background-color: black;text-decoration: none;display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
 	</div>
-	<div id="div-1" style="background: white;height: 100%;width: 100%;position: fixed;top: 0;left: 0;"></div>
+	<div id="div-1" style="background: white;height: 100%;width: 100%;position: fixed;top: 0;left: 0;overflow: auto;"></div>
 	<p>0</p>
 	<p>1</p>
 	<p>2</p>
@@ -34,7 +34,7 @@ include 'meta.php';
 	<p>9</p>
 	<p>Mam nadzieję, że przyciągnąłem Twoją uwagę i możemy przejść dalej?</p>
 	<p><span id="span-tak" style="width: 50%;float: left;text-decoration: underline;cursor: pointer;">tak</span><span id="span-nie" style="width: 50%;float: right;text-decoration: underline;">nie</span></p>
-	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;">
+	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;overflow: auto;">
 		<div class="loading" style="width: 40%;text-align: right;">
 			<div id="p-loading loading-text" class="p-loading"><span>kreatywność - ładowanie</span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>dokładność</span><span> - ładowanie </span></div><br>
