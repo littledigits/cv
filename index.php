@@ -17,6 +17,10 @@ include 'meta.php';
 </style>
 <script src="js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
+	<div style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;display: inline-block;">
+		<a id="href-menu" href="menu.php" style="color: white;text-decoration: none;">[x]</a>
+		<a id="href-reload" href="index.php" style="color: white;text-decoration: none;display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
+	</div>
 	<div id="div-1" style="background: white;height: 100%;width: 100%;position: fixed;top: 0;left: 0;"></div>
 	<p>0</p>
 	<p>1</p>
@@ -30,9 +34,9 @@ include 'meta.php';
 	<p>9</p>
 	<p>Mam nadzieję, że przyciągnąłem Twoją uwagę i możemy przejść dalej?</p>
 	<p><span id="span-tak" style="width: 50%;float: left;text-decoration: underline;cursor: pointer;">tak</span><span id="span-nie" style="width: 50%;float: right;text-decoration: underline;">nie</span></p>
-	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;z-index: 1;">
+	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;">
 		<div class="loading" style="width: 40%;text-align: right;">
-			<div id="p-loading loading-text" class="p-loading"><span>kreatywność</span><span> - ładowanie</span></div><br>
+			<div id="p-loading loading-text" class="p-loading"><span>kreatywność - ładowanie</span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>dokładność</span><span> - ładowanie </span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>zaangażowanie</span><span> - ładowanie </span></div><br>
 			<div id="p-loading loading-text" class="p-loading"><span>samodzielność</span><span> - ładowanie </span></div><br>
@@ -60,19 +64,29 @@ include 'meta.php';
 		$('#div-1').fadeTo(2500, 0, 'linear', function(){
 			$('#div-1').remove();
 		});
-		//$('#div-1').delay(2500).remove();
-		$('p').eq(0).delay(2500).fadeIn(i);
-		$('p').eq(1).delay(4500).fadeIn(i);
-		$('p').eq(2).delay(6500).fadeIn(i);
-		$('p').eq(3).delay(8500).fadeIn(i);
-		$('p').eq(4).delay(10500).fadeIn(i);
-		$('p').eq(5).delay(12500).fadeIn(i);
-		$('p').eq(6).delay(14500).fadeIn(i);
-		$('p').eq(7).delay(16500).fadeIn(i);
-		$('p').eq(8).delay(18500).fadeIn(i);
-		$('p').eq(9).delay(20500).fadeIn(i);
-		$('p').eq(10).delay(22500).fadeIn(i);
-		$('p').eq(11).delay(24500).fadeIn(i);
+		$('p').delay(2500).eq(0).fadeIn(i, function(){
+			$('p').eq(1).fadeIn(i*0.8, function(){
+				$('p').eq(2).fadeIn(i*0.7, function(){
+					$('p').eq(3).fadeIn(i*0.6, function(){
+						$('p').eq(4).fadeIn(i*0.5, function(){
+							$('p').eq(5).fadeIn(i*0.4, function(){
+								$('p').eq(6).fadeIn(i*0.3, function(){
+									$('p').eq(7).fadeIn(i*0.25, function(){
+										$('p').eq(8).fadeIn(i*0.2, function(){
+											$('p').eq(9).fadeIn(i*0.15, function(){
+												$('p').eq(10).fadeIn(i, function(){
+													$('p').eq(11).fadeIn(i);
+												});
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});
 	});
 	$('#span-tak').click(function(){
 		$('#div-2').eq(0).fadeIn(1000).css({display: 'inlineBlock'});
@@ -91,11 +105,12 @@ include 'meta.php';
 		var x = $('#knowledge-loading');
 		x.delay(6200).animate({width: '30%'}, 4000, function(){
 			$('#knowledge-loading-caption').css({visibility: 'visible'});
-		x.css({backgroundColor: 'red'});
-		$('#knowledge-loading-caption').text('wciąż ładuję');
-		$('#motivation-letter').delay(10200).css({display: 'block'});
-			});
+			x.css({backgroundColor: 'red'});
+			$('#knowledge-loading-caption').text('wciąż ładuję');
+			$('#motivation-letter').delay(10200).css({display: 'block'});
+			$('#href-reload').delay(10200).css({display: 'block'});
 		});
+	});
 	$('#span-nie').mouseover(function(){
 		$(this).fadeOut(200);
 	});
