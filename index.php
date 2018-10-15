@@ -18,8 +18,8 @@ include 'meta.php';
 <script src="js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
 	<div style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;display: inline-block;">
-		<a id="href-menu" href="menu.php" style="color: white;background-color: black;text-decoration: none;">[x]</a>
-		<a id="href-reload" href="index.php" style="color: white;background-color: black;text-decoration: none;display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
+		<a id="href-menu" href="menu.php" style="color: white;text-shadow: black 0 0 1px;text-decoration: none;">[x]</a>
+		<a id="href-reload" href="index.php" style="color: white;text-shadow: black 0 0 1px;text-decoration: none;display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
 	</div>
 	<div id="div-1" style="background: white;height: 100%;width: 100%;position: fixed;top: 0;left: 0;overflow: auto;"></div>
 	<p>0</p>
