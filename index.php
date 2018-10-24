@@ -3,23 +3,26 @@ include 'meta.php';
 ?>
 <!doctype html>
 <html lang="pl">
-<title>intro 0.1</title>
+<title>intro 0.4</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" href="images/logo.png">
 <style>
-	* {font-family: Lato, Share Tech Mono, Lucida Console;}
+	* {font-family: Lato, Share Tech Mono, Lucida Console;cursor: default;}
 	p {font-size: 150%;text-align: center;display: none;color: white;}
 	.p-loading {display: block;margin: 0;padding: 0;}
 	.loading-bar {display: block;}
 	.loading-text {text-align: left;}
 	div.loading {font-size: 150%;text-align: center;color: white;float: left;}
 	.span-loading {color: black;background: white;width: 0;position: absolute;margin-left: 1%;}
+	#href-menu, #href-reload {color:white;text-shadow: black 0 0 1px;text-decoration: none;}
+	#href-menu:hover, #href-reload:hover, .fa-redo:hover {font-size: 150%;cursor: pointer;}
+	a {cursor: pointer;}
 </style>
 <script src="js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
-	<div style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;display: inline-block;">
-		<a id="href-menu" href="menu.php" style="color: white;text-shadow: black 0 0 1px;text-decoration: none;">[x]</a>
-		<a id="href-reload" href="index.php" style="color: white;text-shadow: black 0 0 1px;text-decoration: none;display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
+	<div id="href-menu-reload" style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;padding: 5px;">
+		<a id="href-menu" href="menu.php">[x]</a>
+		<a id="href-reload" href="index.php" style="display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
 	</div>
 	<div id="div-1" style="background: white;height: 100%;width: 100%;position: fixed;top: 0;left: 0;overflow: auto;"></div>
 	<p>0</p>
@@ -107,8 +110,9 @@ include 'meta.php';
 			$('#knowledge-loading-caption').css({visibility: 'visible'});
 			x.css({backgroundColor: 'red'});
 			$('#knowledge-loading-caption').text('wciąż ładuję');
-			$('#motivation-letter').delay(10200).css({display: 'block'});
-			$('#href-reload').delay(10200).css({display: 'block'});
+			$('#motivation-letter').css({display: 'block'});
+			$('#href-reload').css({display: 'block'});
+			$('#href-menu').css({display: 'none'});
 		});
 	});
 	$('#span-nie').mouseover(function(){
