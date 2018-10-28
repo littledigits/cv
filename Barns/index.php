@@ -69,7 +69,7 @@
 								<li><a href="#" class="btn btn-info p-1"><samp>ES&nbsp;</samp><img src="img/es.gif"></a></li>
 							</ul>
 				</div>
-				<div class="col-xs-12 col-sm-10 bg-light jumbotron">
+				<div class="col-xs-12 col-sm-10 jumbotron" style="background-color: rgba(255,255,255,0.6);">
 					<h3 class="text-secondary">WITAMY W NASZYM RANCZO</h3>
 					
 					<img class="img-fluid img-thumbnail border-0 w-100 d-lg-none frame" src="img/821911a8b7cb18887ade2ad0c6526863.jpg">
