@@ -42,7 +42,7 @@
 							<li class="nav-item"><a href="contact.php" class="nav-link px-5 mx-3 bg-warning text-secondary">Kontakt</a></li>
 							<li class="nav-item dropdown mt-1">
 								<a href="#" class="nav-link px-5 mx-3 bg-warning text-secondary dropdown-toggle" id="language-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="flase">Lang&nbsp;
-									<i class="fas fa-globe"></i></i>
+									<i class="fas fa-globe"></i>
 								</a>
 								<ul class="dropdown-menu bg-transparent border-0 m-0 p-0" aria-labelledby="navbarDropdown">
 									<li><a href="#" class="nav-link px-5 mx-3 bg-info text-light"><samp>EN&nbsp;</samp><img src="img/en.gif"></a></li>

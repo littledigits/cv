@@ -151,7 +151,8 @@
 
 			<footer>
 				<div class="row justify-content-center">
-					<a href="http://littledigits.pl" target="_blank" class="btn btn-danger py-0"><small>Creatively developed by littleDIGITS</small></a>
+					<a href="http://littledigits.pl/ranczo" target="_blank" class="btn btn-success py-0">Ranczo pod pomarańczą</a>
+					<a href="http://littledigits.pl" target="_blank" class="btn btn-danger py-0">Creatively developed by littleDIGITS</a>
 				</div>
 			</footer>
 		</div>

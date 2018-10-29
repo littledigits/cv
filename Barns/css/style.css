@@ -1,7 +1,6 @@
- #main-container {background: url(../img/background-plank.jpeg) fixed;background-size: cover;}
- #big-image-header {background: url(../img/) fixed no-repeat top center;background-size: contain;}
- header h2 {margin-top: 146px;margin-bottom: 145px;text-shadow: 0 0 19px black;font-family: 'Caveat', cursive;}
- .navbar > a {text-shadow: 0 0 9px black;font-size: 110%;font-family: 'Caveat', cursive;}
+#main-container {background: url(../img/background-plank.jpeg) fixed;background-size: cover;}
+#big-image-header {background: url(../img/) fixed no-repeat top center;background-size: contain;}
+header h2 {margin-top: 146px;margin-bottom: 145px;text-shadow: 0 0 19px black;font-family: 'Caveat', cursive;}
 
 iframe {width: 600px;}
 .frame {background-image: linear-gradient(-90deg, orange, white, orange);}

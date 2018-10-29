@@ -29,7 +29,7 @@
 				</div>
 
 				<div class="row bg-transparent navbar navbar-light d-lg-none">
-					<a class="navbar-brand text-warning" href="#">Ranczo pod pomarańczą</a>
+					<a class="navbar-brand text-warning navbar-brand-style" href="#">Ranczo pod pomarańczą</a>
 					<button class="navbar-toggler mb-1 bg-warning" type="button" data-toggle="collapse" data-target="#small-menu" aria-controls="small-menu" aria-expanded="false" aria-label="Toggle navigation">
 						<i class="navbar-toggler-icon"></i>
 					</button>
@@ -42,7 +42,7 @@
 							<li class="nav-item"><a href="contact.php" class="nav-link px-5 mx-3 bg-warning text-secondary">Kontakt</a></li>
 							<li class="nav-item dropdown mt-1">
 								<a href="#" class="nav-link px-5 mx-3 bg-warning text-secondary dropdown-toggle" id="language-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="flase">Lang&nbsp;
-									<i class="fas fa-globe"></i></i>
+									<i class="fas fa-globe"></i>
 								</a>
 								<ul class="dropdown-menu bg-transparent border-0 m-0 p-0" aria-labelledby="navbarDropdown">
 									<li><a href="#" class="nav-link px-5 mx-3 bg-info text-light"><samp>EN&nbsp;</samp><img src="img/en.gif"></a></li>
@@ -137,9 +137,9 @@
 			</div>
 
 			<footer>
-				<div class="row justify-content-center">
-					<a href="http://littledigits.pl" target="_blank" class="btn btn-danger py-0"><small>Creatively developed by littleDIGITS</small></a>
-				</div>
+				<?php
+					include 'footer.html';
+				?>
 			</footer>
 		</div>
 
