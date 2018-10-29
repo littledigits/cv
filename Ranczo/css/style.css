@@ -17,9 +17,9 @@
 @media (min-width: 992px) {
 	#main-container {background: url(../img/67824_dojrzale_pomarancze.jpg) fixed;background-size: cover;}
 	#big-image-header {background: url(../img/header-bd7161920e9a4835a7d6649dc53c6ab3.jpg) fixed no-repeat top center;background-size: contain;}
-	header h2 {margin-top: 131px;margin-bottom: 131px;text-shadow: 0 0 19px black;font-family: 'Caveat', cursive;}
+	header h2 {margin-top: 110px;margin-bottom: 80px;text-shadow: 0 0 19px black;font-family: 'Caveat', cursive;}
 	iframe {width: 600px;}
 }
 @media (min-width: 1200px) {
-	header h2 {margin-top: 145px;margin-bottom: 145px;text-shadow: 0 0 19px black;font-family: 'Caveat', cursive;}
+	header h2 {margin-top: 135px;margin-bottom: 115px;text-shadow: 0 0 19px black;font-family: 'Caveat', cursive;}
 }
