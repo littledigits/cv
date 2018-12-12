@@ -50,6 +50,7 @@ p#other::before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
 footer {clear: both;height: auto;color: white;background-color: black;position: fixed;bottom: 0; right: 0;width: 100%;border-top: 1px solid white;}
 footer p {margin: 0 0 0 0;}
 footer span img {vertical-align: bottom;}
+footer p {font-size: 60%;}
 
 .menu-content {display: none;z-index: 1;position: absolute;}
 .menu-content button {color: black;background-color: white;}
