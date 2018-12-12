@@ -18,7 +18,9 @@ function indexinfo($folder, $opis, $disabled) {
 		$target=$folder.'/address.html';
 	} elseif ($folder=="bootstrap") {
 		$target=$folder.'/printing.html';
-	} 
+	} elseif ($folder=="ranczo") {
+		$target=$folder.'/index.php';
+	}
 	else {
 		$target=$folder.'/address.php';
 	}
