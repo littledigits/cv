@@ -16,8 +16,8 @@ nav {border-bottom: 1px solid white;}
 /*.dropdown {display: none;}*/
 .href-menu {text-shadow: white 0 0 1px;color: transparent;transition: 1.7s;}
 .href-menu:hover {text-shadow: none;color: white;transition: 0.4s;}
-.href-menu-selected::before{content: "<";}
-.href-menu-selected::after{content: "/>";}
+.href-menu-selected:before{content: "<";}
+.href-menu-selected:after{content: "/>";}
 
 
 article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
@@ -40,10 +40,10 @@ p {margin: 1px;}
 article p {line-height: 170%;}
 h3#zero{counter-reset: licznik;}
 h3#zero:before{content: "[0] "}
-h3#other::before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
+h3#other:before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
 p#zero{counter-reset: licznik;}
 p#zero:before{content: "[0] "}
-p#other::before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
+p#other:before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
 
 .home{display: none;/*border:solid 1px white;padding-left: 1px;position: fixed;right: 1px;top: 500px;text-decoration: none;*/}
 
