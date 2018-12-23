@@ -45,7 +45,7 @@ if (isset($_cookie['css'])) {
 		</div>
 <div id="iframe-right">
 	<h2 style="display: none;"><i class="fa fa-university"></i> WYKSZTAŁCENIE</h2>
-	<h3 style="display: none;">[1] 10.2018 <i class="fa fa-arrow-right"></i> <i class="fas fa-infinity"></i></h3>
+	<h3 style="display: none;">[1] 10.2018 <i class="fa fa-arrow-right"></i> 12.2018</i></h3>
 	<p style="display: none;"><a href="http://www.pja.edu.pl/" target="_blank">Polsko-Japońska Akademia Technik Komputerowych</a><span>, kierunek Informatyka</span></p>
 	<h3 style="display: none;">[0] 09.2006 <i class="fa fa-arrow-right"></i> 04.2008</h3>
 	<p style="display: none;">Prywatne Liceum Ogólnokształcące dla Dorosłych Nr 19 w Warszawie. Zaliczony egzamin maturalny.</p>

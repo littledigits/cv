@@ -15,10 +15,14 @@ nav {border-bottom: 1px solid white;}
 
 /*.dropdown {display: none;}*/
 .href-menu {text-shadow: white 0 0 1px;color: transparent;transition: 1.7s;}
+.href-menu-selected{border-radius: 3px;animation: shine 1s;animation-direction: alternate-reverse;}
+@keyframes shine{
+	from{background-color: black;color: white;}
+	to{background-color: white;color: black;}
+}
 .href-menu:hover {text-shadow: none;color: white;transition: 0.4s;}
 .href-menu-selected:before{content: "<";}
 .href-menu-selected:after{content: "/>";}
-
 
 article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
 
