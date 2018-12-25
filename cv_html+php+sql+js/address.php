@@ -28,7 +28,7 @@ if (isSet($_COOKIE['css'])) {
 }
 ?>
 	</header>
-	<nav id="nav-dimension">
+	<nav id="nav-dimension" class="navigation">
 <?php
 if (isSet($_cookie['css'])) {
 	if($_COOKIE['css']=="dos") include 'nav.txt';

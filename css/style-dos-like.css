@@ -5,14 +5,16 @@
 hr{margin: 0;}
 
 body {margin: 1px;}
-header {text-align: center;}
-header h1 {font-family: Audiowide;margin: 0;word-wrap: break-word;}
-header h1 a {font-family: Audiowide;margin: 0;word-wrap: break-word;text-decoration: none;}
+header * {font-family: Audiowide;margin: 0;word-wrap: break-word;text-decoration: none;text-align: center;}
 
+.navigation{position: relative;animation: slidetoright .5s;}
+@keyframes slidetoright{
+	from{left: -100%;}
+	to{left: 0;}
+}
 #menu-button {display: none;}
-
 .href-menu {text-shadow: white 0 0 1px;color: transparent;transition: 1.7s;}
-.href-menu-selected{border-radius: 3px;animation: shine 1s;animation-direction: alternate-reverse;}
+.href-menu-selected{border-radius: 3px;animation: shine 1s;animation-direction: alternate-reverse;animation-delay: .5s;}
 @keyframes shine{
 	from{background-color: black;color: white;}
 	to{background-color: white;color: black;}
@@ -44,9 +46,9 @@ p#other:before{counter-increment: licznik;content: "[" counter(licznik) "] ";}
 .home{display: none;/*border:solid 1px white;padding-left: 1px;position: fixed;right: 1px;top: 500px;text-decoration: none;*/}
 
 footer {clear: both;height: auto;color: white;background-color: black;position: fixed;bottom: 0; right: 0;width: 100%;border-top: 1px solid white;}
+footer * {font-size: 20px;}
 footer p {margin: 0 0 0 0;}
-footer span img {vertical-align: bottom;}
-footer p {font-size: 60%;}
+footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 
 .menu-content {display: none;z-index: 1;position: absolute;}
 .menu-content button {color: black;background-color: white;}
