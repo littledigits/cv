@@ -6,6 +6,9 @@ hr{margin: 0;}
 
 body {margin: 1px;}
 header * {font-family: Audiowide;margin: 0;word-wrap: break-word;text-decoration: none;text-align: center;}
+.header {position: relative;}
+.header p {transition: 1s;position: relative;z-index: 2;cursor: pointer;}
+.header a {width: 100%;position: absolute;left: 0;top: 0;z-index: 1;}
 
 .navigation{position: relative;animation: slidetoright .5s;}
 @keyframes slidetoright{

@@ -57,3 +57,5 @@ function subdirOpenClose5() {
 	document.getElementById("h305div").classList.toggle("subdir-hidden-visible");
 	document.getElementById("h305i01").classList.toggle("subdir-visible-hidden");
 }
+
+function rotateX() {document.getElementById('rotate').style.transform = "rotateX(90deg)";}
