@@ -10,10 +10,10 @@ header * {font-family: Audiowide;margin: 0;word-wrap: break-word;text-decoration
 .header p {transition: 1s;position: relative;z-index: 2;cursor: pointer;}
 .header a {width: 100%;position: absolute;left: 0;top: 0;z-index: 1;}
 
-.navigation{position: relative;animation: slidetoright .5s;}
-@keyframes slidetoright{
-	from{left: -100%;}
-	to{left: 0;}
+.navigation {position: relative;animation: slidetoright .5s;}
+@keyframes slidetoright {
+	from {left: -100%;}
+	to {left: 0;}
 }
 #menu-button {display: none;}
 .href-menu {text-shadow: white 0 0 1px;color: transparent;transition: 1.7s;}
@@ -93,10 +93,14 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 }
 
 @media screen and (max-width: 480px) {
-	/*resolution test header h1 a {color: green;}*/
+	/*resolution testheader header h1 a {color: green;}*/
+	.header, .header p, .header a, .navigation {position: static;}
+	.header * {font-size: 90%;}
+	.header p {display: none;}
 	.dir {display: none;}
 	nav {width: 100%;display: table;}
 	nav * {width: 100%;}
+	
 	#menu-button {display: initial;color: black; background: white;}
 	ul.menu-html, ul.menu-js {display: none;}
 	ul.menu-html, .menu-show {list-style-type: none;padding: 0;margin:0;}

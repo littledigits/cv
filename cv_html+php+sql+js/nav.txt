@@ -1,6 +1,6 @@
 <?php
 echo '<button id="menu-button" onclick="menuShow()">menu</button>';
-echo '<ul id="menu-js" class="menu-js">';
+echo '<ul id="menu-js" class="menu-js navigation">';
 $filestomenu = glob("*.php");
 $records=count($filestomenu);
 $file=pathinfo($_SERVER['PHP_SELF']);
