@@ -65,7 +65,7 @@ var h = d.getHours();
 setTimeout(hours, 0);
 setInterval(hours, 1000*60*60);
 function hours(){
-	document.getElementById('hou').style.transform = "rotate("+h*6+"deg)";
+	document.getElementById('hou').style.transform = "rotate("+h*30+"deg)";
 	h++;
 }
 var m = d.getMinutes();
