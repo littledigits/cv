@@ -26,9 +26,12 @@ header * {font-family: Audiowide;margin: 0;word-wrap: break-word;text-decoration
 .href-menu-selected:before{content: "<";}
 .href-menu-selected:after{content: "/>";}
 
-article/*, section*/{clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
+article {clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
 
 #iframe-left {display: none;}
+
+section {width: 49%;float: left;}
+section:nth-of-type(2) {float: right;}
 
 h3.clickable {cursor: pointer;}
 
@@ -89,6 +92,7 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 	.menu-html li, .menu-show li {margin: 0;text-align: center;}
 	.menu-html a, .menu-show a {margin-top: 1%; margin-bottom: 1%; padding: 2% 0;text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
+	section {width: 100%;clear: both;}
 	.bottom-p {display: none;}
 }
 
@@ -107,7 +111,7 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 	.menu-html li, .menu-show li {margin: 0;text-align: center;}
 	.menu-html a, .menu-show a {margin-top: 5%;margin-bottom: 5%;text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
-
+	section {width: 100%;clear: both;}
 	footer {padding-right: 1px;}
 	#footer-brands-icons {float: right;}
 	li a:before {content: none;}
