@@ -89,6 +89,10 @@ mysql_close($connection);
 <p id="wynik_selekcji"></p>
 </form>
 
+<?php
+include $urladdress.'widgets/clock.html';
+?>
+
 </div>
 </article>
 
