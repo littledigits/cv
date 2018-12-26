@@ -82,3 +82,11 @@ function seconds(){
 	document.getElementById('sec').style.transform = "rotate("+s*6+"deg)";
 	s++;
 }
+
+var d = new Date();
+document.getElementById('bottom-p').innerHTML = d;
+setInterval(datetime, 1000);
+function datetime(){
+	var d = new Date();
+	document.getElementById('bottom-p').innerHTML = d;
+}

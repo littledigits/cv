@@ -89,11 +89,6 @@ if (isset($_COOKIE['css'])) {
 else include 'footer.txt';
 ?>
 
-	<p class="bottom-p">Strona wyświetlona (czas serwera) <?php
-	$weekday=array('Monday'=>'poniedziałek', 'Tuesday'=>'wtorek', 'Wednesday'=>'środa', 'Thursday'=>'czwartek', 'Friday'=>'piątek', 'Saturday'=>'sobota', 'Sunday'=>'niedziela');
-	echo date("d.m.Y")." r. (".$weekday[date("l")].") ".date("h:i:s");
-	?>
-	</p>
 </footer>
 
 <script>
