@@ -16,7 +16,7 @@ else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.c
 ?>
 <!doctype html>
 <html lang="pl-PL">
-<title>WYKSZTAŁCENIE, KURSY I SZKOLENIA</title>
+<title>WYKSZTAŁCENIE, KURSY I SZKOLENIA - littleDIGITS</title>
 <link rel="shortcut icon" href="../images/logo.png">
 <body>
 <header id="header-dimension">

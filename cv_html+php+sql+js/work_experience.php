@@ -15,7 +15,7 @@ else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.c
 ?>
 <!doctype html>
 <html lang="pl-PL">
-<title>DOŚWIADCZENIE ZAWODOWE</title>
+<title>DOŚWIADCZENIE ZAWODOWE - littleDIGITS</title>
 <link rel="shortcut icon" href="../images/logo.png">
 <body>
 <header id="header-dimension">

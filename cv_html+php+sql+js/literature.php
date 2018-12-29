@@ -16,7 +16,7 @@ else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.cs
 ?>
 <!doctype html>
 <html lang="pl-PL">
-<title>LITERATURA</title>
+<title>LITERATURA - littleDIGITS</title>
 <link rel="shortcut icon" href="../images/logo.png">
 <body>
 <header id="header-dimension">

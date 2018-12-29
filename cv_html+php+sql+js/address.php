@@ -17,7 +17,7 @@ else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.cs
 <!doctype html>
 <html lang="pl-PL">
 <link rel="shortcut icon" href="../images/logo.png">
-<title>DANE PODSTAWOWE</title>
+<title>DANE PODSTAWOWE - littleDIGITS</title>
 <body>
 	<header id="header-dimension">
 <?php
@@ -72,7 +72,7 @@ $rekord = mysql_fetch_assoc($wynik);
 	if($www!=""){$www='<p'.$style.'><i class="fa fa-industry"></i> <a href="http://$www" target="_blank">'.$www.'</a></p>';}
 	if($birthday!=""){$birthday='<p'.$style.'><i class="fa fa-birthday-cake"></i> '.$birthday.'</p>';}
 	if($address!=""){$address='<p'.$style.'><i class="fa fa-globe"></i> '.$address.'</p>';}
-	if($phone!=""){$phone='<p'.$style.'><i class="fa fa-phone"></i> '.$phone.'</p>';}
+	if($phone!=""){$phone='<p'.$style.'><i class="fa fa-phone"></i> <a href="tel:'.substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,2).'-'.substr($phone,8,2).'-'.substr($phone,10,2).'">'.$phone.'</a></p>';}
 	if($e_mail!=""){$e_mail='<p'.$style.'><i class="fa fa-at"></i> <a href="mailto:'.$e_mail.'">'.$e_mail.'</a></p>';}
 	if($skype!=""){$skype='<p'.$style.'> '.$skype.'</p>';}
 	if($facebook!=""){$facebook='<p'.$style.'> '.$facebook.'</p>';}

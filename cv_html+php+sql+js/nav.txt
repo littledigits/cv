@@ -18,6 +18,7 @@ for ($i=0; $i < $records; $i++) {
 		$haystack=fgets($filetoopen);
 			if(strstr($haystack,$needle)){
 	 			$title=chop(substr($haystack, 7));
+	 			$title=str_replace(' - littleDIGITS','',$title);
 	 			break;
 			} else {echo '';}
 	}

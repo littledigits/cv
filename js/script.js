@@ -84,9 +84,9 @@ function seconds(){
 }
 
 var d = new Date();
-document.getElementById('bottom-p').innerHTML = d;
+document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 setInterval(datetime, 1000);
 function datetime(){
 	var d = new Date();
-	document.getElementById('bottom-p').innerHTML = d;
+	document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 }
