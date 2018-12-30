@@ -60,28 +60,7 @@ function subdirOpenClose5() {
 
 function rotateX() {document.getElementById('rotate').style.transform = "rotateX(90deg)";}
 
-var d = new Date();
-var h = d.getHours();
-setTimeout(hours, 0);
-setInterval(hours, 1000*60*60);
-function hours(){
-	document.getElementById('hou').style.transform = "rotate("+h*30+"deg)";
-	h++;
-}
-var m = d.getMinutes();
-setTimeout(minutes, 0);
-setInterval(minutes, 1000*60);
-function minutes(){
-	document.getElementById('min').style.transform = "rotate("+m*6+"deg)";
-	m++;
-}
-var s = d.getSeconds();
-setTimeout(seconds, 0);
-setInterval(seconds, 1000);
-function seconds(){
-	document.getElementById('sec').style.transform = "rotate("+s*6+"deg)";
-	s++;
-}
+
 
 var d = new Date();
 document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();

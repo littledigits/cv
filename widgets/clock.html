@@ -1,12 +1,33 @@
-<svg id="hou" style="width: 100px;height: 100px;background-color: transparent;margin-top: 10px;margin-bottom: 10px;">
-	<circle cx="50" cy="50" r="40" fill="white"/>
-	<line x1="50" y1="10" x2="50" y2="50" style="stroke:rgb(0,0,0);width: 1px;"/>
-</svg>
-<svg id="min" style="width: 100px;height: 100px;background-color: transparent;margin-top: 10px;margin-bottom: 10px;">
-	<circle cx="50" cy="50" r="40" fill="white"/>
-	<line x1="50" y1="10" x2="50" y2="50" style="stroke:rgb(0,0,0);width: 1px;"/>
-</svg>
-<svg id="sec" style="width: 100px;height: 100px;background-color: transparent;margin-top: 10px;margin-bottom: 10px;">
-	<circle cx="50" cy="50" r="40" fill="white"/>
-	<line x1="50" y1="10" x2="50" y2="50" style="stroke:rgb(0,0,0);width: 1px;"/>
-</svg>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<svg id="hou" style="width: 100px;height: 100px;background-color: transparent;margin-top: 10px;margin-bottom: 10px;">
+		<circle cx="50" cy="50" r="40" fill="white"/>
+		<line x1="50" y1="10" x2="50" y2="50" style="stroke:rgb(0,0,0);width: 1px;"/>
+	</svg>
+	<svg id="min" style="width: 100px;height: 100px;background-color: transparent;margin-top: 10px;margin-bottom: 10px;">
+		<circle cx="50" cy="50" r="40" fill="white"/>
+		<line x1="50" y1="10" x2="50" y2="50" style="stroke:rgb(0,0,0);width: 1px;"/>
+	</svg>
+	<svg id="sec" style="width: 100px;height: 100px;background-color: transparent;margin-top: 10px;margin-bottom: 10px;">
+		<circle cx="50" cy="50" r="40" fill="white"/>
+		<line x1="50" y1="10" x2="50" y2="50" style="stroke:rgb(0,0,0);width: 1px;"/>
+	</svg>
+	<script>
+		setTimeout(clock, 0);
+		setInterval(clock, 1000);
+		function clock(){
+			var d = new Date();
+			var h = d.getHours();
+			document.getElementById('hou').style.transform = "rotate("+h*30+"deg)";
+			var m = d.getMinutes();
+			document.getElementById('min').style.transform = "rotate("+m*6+"deg)";
+			var s = d.getSeconds();
+			document.getElementById('sec').style.transform = "rotate("+s*6+"deg)";
+		}
+</script>
+</body>
+</html>
