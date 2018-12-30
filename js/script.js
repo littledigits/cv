@@ -60,8 +60,6 @@ function subdirOpenClose5() {
 
 function rotateX() {document.getElementById('rotate').style.transform = "rotateX(90deg)";}
 
-
-
 var d = new Date();
 document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 setInterval(datetime, 1000);
