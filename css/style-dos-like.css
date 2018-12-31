@@ -1,4 +1,5 @@
 * {font-family: Lato, sans-serif, Share Tech Mono, Lucida Console;color: white;background-color: black;font-size: 105%;}
+i, a {background: transparent;}
 
 .nc {display: none;}
 
@@ -27,6 +28,11 @@ header * {font-family: Audiowide, Lucida Console;margin: 0;word-wrap: break-word
 .href-menu-selected:after {content: "/>";}
 
 article {clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
+article.html * {animation: coloristic 5s;}
+@keyframes coloristic {
+	from {color: black;}
+	to {color: white;}
+}
 
 #iframe-left {display: none;}
 
@@ -34,11 +40,6 @@ section {width: 49%;float: left;}
 section:nth-of-type(2) {float: right;}
 
 h3.clickable {cursor: pointer;}
-article section * {animation: coloristic 1s;}
-@keyframes coloristic {
-	from {color: black;}
-	to {color: white;}
-}
 
 .subdir-visible-hidden {display: none;}
 .subdir-hidden-visible {display: unset;}
