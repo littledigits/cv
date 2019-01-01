@@ -32,8 +32,7 @@ function indexinfo($folder, $opis, $disabled) {
 }
 indexinfo ("html", "Czysty HTML z dodatkiem Font awesome", '');
 indexinfo ("html+php+sql+js", "Aktualnie najbardziej zaawansowany wariant", '');
-indexinfo("bootstrap", "Pierwsze podejście. Docelowo ta wersja cv ma słuzyć do wydruku lub tworzenia pliku pdf", '');
-indexinfo("ranczo", "Drugie podejście do bootstrap. Projekt na podstawie materiałów Ranczo pod pomarańczą", '');
+indexinfo("ranczo", "Projekt na podstawie materiałów Ranczo pod pomarańczą", '');
 ?>
 </nav>
 <footer>
