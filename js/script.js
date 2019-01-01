@@ -11,22 +11,6 @@ function setCookieDos() {document.cookie="css=dos";location.reload(true);}
 
 function setCookieNc() {document.cookie="css=nc";location.reload(true);}
 
-function selekcja(thisstring) {
-	var xhttp;
-	if (thisstring.length == 0) { 
-		document.getElementById("wynik_selekcji").innerHTML = "";
-		return;
-	}
-	xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById("wynik_selekcji").innerHTML = this.responseText;
-		}
-	};
-	xhttp.open("GET", "../widgets/oninput.php?q="+thisstring, true);
-	xhttp.send();
-}
-
 function menuShow() {
 	//document.getElementById("menu-js").classList.toggle("menu-show");
 	$(document).ready(function() {$("#menu-js").toggleClass("menu-show");})

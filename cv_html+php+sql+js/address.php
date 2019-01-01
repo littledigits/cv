@@ -87,11 +87,10 @@ mysql_close($connection);
 <br>
 </section>
 <section>
-<form action="">
 <h2 style="display: none;">Wyszukiwanie tagów</h2>
-<input type="text" name="tekst" id="pole_selekcji" autofocus autocomplete="off" onkeyup="selekcja(this.value)">
-<p id="wynik_selekcji"></p>
-</form>
+<?php
+include $urladdress.'widgets/oninput.html';
+?>
 
 <h2 style="display: none;">little DIGITAL clock</h2>
 <?php
