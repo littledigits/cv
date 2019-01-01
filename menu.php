@@ -43,11 +43,11 @@ include 'cv_html+php+sql+js/footer.txt';
 </footer>
 <script>
 	var d = new Date();
-	document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+	document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth()+1 + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 	setInterval(datetime, 1000);
 	function datetime(){
 		var d = new Date();
-		document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+		document.getElementById('bottom-p').innerHTML = d.getDate() + '.' + d.getMonth()+1 + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 }
 </script>
 </body>
