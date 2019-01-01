@@ -38,7 +38,7 @@ indexinfo("ranczo", "Drugie podejście do bootstrap. Projekt na podstawie materi
 </nav>
 <footer>
 <?php
-include 'cv_html+php+sql+js/footer.txt';
+include 'widgets/footer.html';
 ?>
 </footer>
 <script>

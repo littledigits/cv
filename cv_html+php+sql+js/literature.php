@@ -86,7 +86,7 @@ if (isset($_COOKIE['css'])) {
 	elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
 	else echo '';
 }
-else include 'footer.txt';
+else include $urladdress.'widgets/footer.html';
 ?>
 
 </footer>
