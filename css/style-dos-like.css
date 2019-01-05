@@ -28,7 +28,7 @@ header * {font-family: Audiowide, Lucida Console;margin: 0;word-wrap: break-word
 .href-menu-selected:after {content: "/>";}
 
 article {clear: both;padding: 5px 0 0 0;overflow: auto;height: auto;}
-article.html * {animation: coloristic 2s;}
+article.html * {animation: coloristic 1.5s;}
 @keyframes coloristic {
 	from {color: black;}
 	to {color: white;}
