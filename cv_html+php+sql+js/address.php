@@ -14,6 +14,10 @@ if(isSet($_COOKIE['css'])){
 else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
 ?>
 <title>DANE PODSTAWOWE - littleDIGITS</title>
+<style>
+	section {width: 49%;float: left;}
+	section:nth-of-type(2) {float: right;}
+</style>
 </head>
 <body>
 	<header id="header-dimension">
