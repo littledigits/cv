@@ -3,27 +3,28 @@ include 'meta.php';
 ?>
 <!doctype html>
 <html lang="pl">
-<title>intro 0.6 - littleDIGITS</title>
+<title>intro 0.7 - littleDIGITS</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" href="images/logo.png">
 <style>
 	* {font-family: Lato, Share Tech Mono, Lucida Console;cursor: default;}
 	p {font-size: 24px;text-align: center;display: none;color: white;}
 	.p-loading {display: block;margin: 0;padding: 0;vertical-align: middle;}
-	.loading {font-size: 24px;color: white;width: 100%;}
+	.loading {color: white;width: 100%;}
 	.span-loading {color: black;background: white;width: 0;margin: 0;padding: 0;vertical-align: middle;text-align: center;height: 24px;}
-	#href-menu, #href-reload {color:white;text-shadow: black 0 0 1px;text-decoration: none;}
-	#href-menu:hover, #href-reload:hover, .fa-redo:hover {font-size: 150%;cursor: pointer;}
+	.span-loading * {color: black;background: transparent;font-size: 80%;margin: 0;padding: 0;height: 100%;}
+	#href-menu, #href-reload {text-shadow: black 0 0 2px;text-decoration: none;}
+	#href-menu:hover, #href-reload:hover, .fa-redo:hover {font-size: 150%;}
 	a {cursor: pointer;}
 </style>
 <script src="js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
-	<div id="href-menu-reload" style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;padding: 5px;">
+	<div id="href-menu-reload" style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;padding: 5px;background: transparent;">
 		<a id="href-menu" href="menu.php">[x]</a>
 		<a id="href-reload" href="index.php" style="display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
 	</div>
-	<div id="div-1" style="background: white;height: 100%;width: 100%;position: fixed;top: 0;left: 0;overflow: auto;"></div>
-	<p>0</p>
+	<div id="div-1" style="background: white;height: 100%;width: 100%;overflow: auto;"></div>
+	<p style="padding-top: 40px;">0</p>
 	<p>1</p>
 	<p>2</p>
 	<p>3</p>
@@ -35,7 +36,7 @@ include 'meta.php';
 	<p>9</p>
 	<p>Mam nadzieję, że przyciągnąłem Twoją uwagę i możemy przejść dalej?</p>
 	<p><span id="span-tak" style="width: 50%;float: left;text-decoration: underline;cursor: pointer;">tak</span><span id="span-nie" style="width: 50%;float: right;text-decoration: underline;">nie</span></p>
-	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;overflow: auto;">
+	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;overflow: auto;padding-top: 40px;">
 
 		<div class="loading">
 			<div class="p-loading"><span>kreatywność - ładowanie </span><br><span id="creativity-loading" class="span-loading"><span id="creativity-loading-caption" style="visibility: hidden;"></span></span></div>
