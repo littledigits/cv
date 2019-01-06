@@ -1,5 +1,4 @@
 <?php
-//$url=$_SERVER['DOCUMENT_ROOT'].'/cv/';
 if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
 	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/cv/';
 } else {
@@ -14,10 +13,8 @@ if(isSet($_COOKIE['css'])){
 }
 else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
 ?>
-<!doctype html>
-<html lang="pl-PL">
-<link rel="shortcut icon" href="../images/logo.png">
 <title>DANE PODSTAWOWE - littleDIGITS</title>
+</head>
 <body>
 	<header id="header-dimension">
 <?php
@@ -106,7 +103,7 @@ include $urladdress.'widgets/clock.html';
 
 <?php
 if (isSet($_COOKIE['css'])) {
-	if ($_COOKIE['css']=="dos") include 'footer.txt';
+	if ($_COOKIE['css']=="dos") include '../widgets/footer.html';
 	elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
 	else echo '';
 }

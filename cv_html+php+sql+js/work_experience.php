@@ -13,10 +13,8 @@ if(isset($_COOKIE['css'])){
 }
 else print '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
 ?>
-<!doctype html>
-<html lang="pl-PL">
 <title>DOŚWIADCZENIE ZAWODOWE - littleDIGITS</title>
-<link rel="shortcut icon" href="../images/logo.png">
+</head>
 <body>
 <header id="header-dimension">
 <?php
@@ -114,7 +112,7 @@ function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()" 
 
 <?php
 if (isset($_COOKIE['css'])) {
-	if ($_COOKIE['css']=="dos") include 'footer.txt';
+	if ($_COOKIE['css']=="dos") include '../widgets/footer.html';
 	elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
 	else print '';
 }

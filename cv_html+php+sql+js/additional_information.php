@@ -1,5 +1,4 @@
 <?php
-//$urladdres=$_SERVER['DOCUMENT_ROOT'].'/cv/';
 if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive') {
 	$urladdress=$_SERVER['DOCUMENT_ROOT'].'/cv/';
 } else {
@@ -14,10 +13,8 @@ if(isset($_COOKIE['css'])){
 }
 else echo '<link rel="stylesheet" type="text/css" href="../css/style-dos-like.css">';
 ?>
-<!doctype html>
-<html lang="pl-PL">
 <title>DODATKOWE INFORMACJE - littleDIGITS</title>
-<link rel="shortcut icon" href="../images/logo.png">
+</head>
 <body>
 	<header id="header-dimension">
 <?php
@@ -103,7 +100,7 @@ if (isset($_cookie['css'])) {
 		<?php include $urladdress.'widgets/css_button.txt';
 
 		if (isset($_COOKIE['css'])) {
-		if ($_COOKIE['css']=="dos") include 'footer.txt';
+		if ($_COOKIE['css']=="dos") include '../widgets/footer.html';
 		elseif ($_COOKIE['css']=="nc") include 'navigator.txt';
 		else echo '';
 		}
