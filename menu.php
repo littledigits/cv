@@ -1,10 +1,6 @@
 <?php
 include 'meta.php';
 ?>
-<!doctype html>
-<html lang="pl-PL">
-<link rel="stylesheet" href ="css/style-dos-like.css">
-<link rel="shortcut icon" href="images/logo.png">
 <title>menu</title>
 <style>
 		@keyframes leftrightbg {
@@ -16,6 +12,7 @@ include 'meta.php';
 			to {left: 0;}
 		}
 	</style>
+</head>
 <body>
 <header>
 <h1>www:\littleDIGITS.pl\CURRICULUM VITAE\</h1>
