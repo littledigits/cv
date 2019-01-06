@@ -1,11 +1,10 @@
 ﻿<?php
-if($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive'){
-	echo '<link href="http://localhost/cv/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">';
+if($_SERVER['DOCUMENT_ROOT']=='C:/Users/User/OneDrive/cv'){
+	echo '<link href="http://localhost/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">';
 } else {
 	echo '<link href="http://littledigits.pl/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">';
 }
 ?>
-<!--link href="http://littledigits.pl/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet"-->
 <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Audiowide|Lato|Coda" rel="stylesheet">
 <meta charset="utf-8">
 <meta name="keywords" content="krzysztof, borucki, tumkiewicz, borucki-tumkiewicz, webmaster, www, littledigits, littledigits.pl, tworzenie, przygotowanie, stworzenie, utworzenie, strona, strony, stron, stronach, html, css">
