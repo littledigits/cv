@@ -1,9 +1,12 @@
-var a=document.body.clientHeight;
-var b=document.getElementById('header-dimension').offsetHeight;
-var c=document.getElementById('nav-dimension').offsetHeight;
-var d=document.getElementById('footer-dimension').offsetHeight;
-var total=a-b-c-d-6;
-document.getElementById('article-dimension').style.height=total;
+function dimension(){
+	var a=window.innerHeight;
+	var b=document.getElementById('header-dimension').offsetHeight;
+	var c=document.getElementById('nav-dimension').offsetHeight;
+	var d=document.getElementById('footer-dimension').offsetHeight;
+	var total=a-b-c-d-10;
+	document.getElementById('article-dimension').style.height=total + "px";
+}
+dimension();
 
 function menuOpen() {document.getElementById("menu-content").classList.toggle("show");}
 
@@ -12,7 +15,6 @@ function setCookieDos() {document.cookie="css=dos";location.reload(true);}
 function setCookieNc() {document.cookie="css=nc";location.reload(true);}
 
 function menuShow() {
-	//document.getElementById("menu-js").classList.toggle("menu-show");
 	$(document).ready(function() {$("#menu-js").toggleClass("menu-show");})
 }
 
