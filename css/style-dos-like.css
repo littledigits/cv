@@ -36,8 +36,6 @@ article.html * {animation: coloristic 1.5s;}
 
 #iframe-left {display: none;}
 
-h3.clickable {cursor: pointer;}
-
 .subdir-visible-hidden {display: none;}
 .subdir-hidden-visible {display: unset;}
 
@@ -45,6 +43,8 @@ h3.clickable {cursor: pointer;}
 
 p {margin: 1px;}
 article p {line-height: 170%;}
+h3 {margin-top: 30px;margin-bottom: 15px;}
+h3.clickable {cursor: pointer;}
 h3#zero {counter-reset: licznik;}
 h3#zero:before {content: "[0] "}
 h3#other:before {counter-increment: licznik;content: "[" counter(licznik) "] ";}
@@ -79,7 +79,8 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 	.menu-html li, .menu-js li {float: left;margin: 0 0 0 15px;}
 	.menu-html li:first-child, .menu-js li:first-child {margin: 0;}
 	.menu-html a, .menu-js a {text-decoration: none;font-size: 90%;}
-	h2:before {content: "<SUBDIR> ";font-size: 70%;}
+	h2:before {content: "<SUBDIR> ";font-size: 70%;color: grey;transition: 0.4s;}
+	h2:hover::before {content: "<SUBDIR> ";font-size: 70%;color: white;transition: 0.4s;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
