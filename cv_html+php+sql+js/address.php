@@ -66,7 +66,7 @@ $rekord = mysql_fetch_assoc($wynik);
 	$linkedin=$rekord['linkedin'];
 
 	if($identity!="") {$identity='<p'.$style.'><i class="fas fa-id-card"></i> '.$identity.'<p>';}
-	if($www!=""){$www='<p'.$style.'><i class="fa fa-industry"></i> <a href="http://$www" target="_blank">'.$www.'</a></p>';}
+	if($www!=""){$www='<p'.$style.'><i class="fa fa-industry"></i> <a href="http://'.$www.'" target="_blank">'.$www.'</a></p>';}
 	if($birthday!=""){$birthday='<p'.$style.'><i class="fa fa-birthday-cake"></i> '.$birthday.'</p>';}
 	if($address!=""){$address='<p'.$style.'><i class="fa fa-globe"></i> '.$address.'</p>';}
 	if($phone!=""){$phone='<p'.$style.'><i class="fa fa-phone"></i> <a href="tel:'.substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,2).'-'.substr($phone,8,2).'-'.substr($phone,10,2).'">'.$phone.'</a></p>';}
