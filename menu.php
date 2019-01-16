@@ -47,9 +47,11 @@ indexinfo("ranczo", "Projekt na podstawie materiałów Ranczo pod pomarańczą",
 	<div style="width: 100%;animation: showthis forwards; animation-delay: 3s;z-index: 10;background: black;color: white;position: relative;top: 0;left: -100%;">
 		<span id="theme-name">theme: DOS_like </span><br class="mid-big">
 		<span id="footer-brands-icons"><span class="mid-big">HTML5 </span><i class="fab fa-html5"></i> <span class="mid-big">CSS3 </span><i class="fab fa-css3"></i> <span class="mid-big">PHP </span><i class="fab fa-php"></i> <span class="mid-big">Font Awesome </span><i class="fab fa-font-awesome"></i> <span class="mid-big">MySQL </span><i class="fas fa-database"></i> <span class="mid-big">JavaScript </span><i class="fab fa-js"></i> <span class="mid-big">Bootstrap</span><img src="../images/bootstrap.png"><span class="mid-big"> Podziękowania dla: Borsoft, P. Paprzycki</span></span>
-		<p class="big">alfabet Morse'a &#8226;&#8211;&#8226;&#8226;|&#8226;&#8226;|&#8211;|&#8211;|&#8226;&#8211;&#8226;&#8226;|&#8226;|&#8211;&#8226;&#8226;|&#8226;&#8226;|&#8211;&#8211;&#8226;|&#8226;&#8226;|&#8211;|&#8226;&#8226;&#8226;</p>
+		<div class="footer-roll">
+			<p class="big">alfabet Morse'a &#8226;&#8211;&#8226;&#8226;|&#8226;&#8226;|&#8211;|&#8211;|&#8226;&#8211;&#8226;&#8226;|&#8226;|&#8211;&#8226;&#8226;|&#8226;&#8226;|&#8211;&#8211;&#8226;|&#8226;&#8226;|&#8211;|&#8226;&#8226;&#8226;</p>
 		<p class="big">kod binarny <code>01101100 01101001 01110100 01110100 01101100 01100101 01100100 01101001 01100111 01101001 01110100 01110011</code></p>
 		<p id="bottom-p" class="bottom-p">Czas</p>
+		</div>
 	</div>
 </footer>
 <script>

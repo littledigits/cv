@@ -59,7 +59,19 @@ p#other:before {counter-increment: licznik;content: "[" counter(licznik) "] ";}
 
 footer {clear: both;height: auto;color: white;background-color: black;position: fixed;bottom: 0; right: 0;width: 100%;border-top: 1px solid white;}
 footer * {font-size: 20px;}
-footer p {margin: 0 0 0 0;}
+footer div p {margin: 0 0 0 0;}
+footer .footer-roll {position: relative;}
+footer .footer-roll p:nth-child(1) {animation: rollA 3s alternate infinite;}
+footer .footer-roll p:nth-child(2) {animation: rollB 3s alternate 3s infinite;position: absolute;top: 0;}
+@keyframes rollA {
+			from {z-index: -1;}
+			to {z-index: 1;}
+		}
+@keyframes rollB {
+			from {z-index: 1;}
+			to {z-index: -1;}
+		}
+
 footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 
 .menu-content {display: none;z-index: 1;position: absolute;}
