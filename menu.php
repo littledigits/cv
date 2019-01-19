@@ -1,7 +1,7 @@
 <?php
 include 'meta.php';
 ?>
-<title>menu</title>
+<title>menu - littleDIGITS</title>
 <style>
 		@keyframes leftrightbg {
 			from {width: 100%;}
