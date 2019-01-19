@@ -36,11 +36,11 @@ if (isset($_cookie['css'])) {
 ?>
 	</nav>
 	<article id="article-dimension">
-		<!--section-->
-			<div id="iframe-left">
-				<?php include "nav.html"; ?>
-			</div>
-			<div id="iframe-right">
+		<div id="iframe-left">
+			<?php include "nav.html"; ?>
+		</div>
+		<div id="iframe-right">
+			<section>
 				<h2 style="display: none;"><i class="fas fa-ellipsis-h"></i> INNE</h2>
 				<?php
 				$style=' style="display: none;"';
@@ -93,8 +93,9 @@ if (isset($_cookie['css'])) {
 				
 				mysql_close($connection);
 				?>
-			</div>
-		</article>
+			</section>
+		</div>
+	</article>
 
 	<footer id="footer-dimension">
 		<?php include $urladdress.'widgets/css_button.txt';

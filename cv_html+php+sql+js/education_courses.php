@@ -37,45 +37,47 @@ if (isset($_cookie['css'])) {
 </nav>
 <article id="article-dimension">
 	<!--section-->
-		<div id="iframe-left">
-			<?php include 'nav.html'; ?>
-		</div>
-<div id="iframe-right">
-	<h2 style="display: none;"><i class="fa fa-university"></i> WYKSZTAŁCENIE</h2>
-	<h3 style="display: none;">[1] 10.2018 <i class="fa fa-arrow-right"></i> 12.2018</i></h3>
-	<p style="display: none;"><a href="http://www.pja.edu.pl/" target="_blank">Polsko-Japońska Akademia Technik Komputerowych</a><span>, kierunek Informatyka</span></p>
-	<h3 style="display: none;">[0] 09.2006 <i class="fa fa-arrow-right"></i> 04.2008</h3>
-	<p style="display: none;">Prywatne Liceum Ogólnokształcące dla Dorosłych Nr 19 w Warszawie. Zaliczony egzamin maturalny.</p>
-	<h2 style="display: none;"><i class="fas fa-thumbs-up"></i> KURSY I SZKOLENIA</h2>
-	<p style="display: none;">[4] kurs pierwszej pomocy <i class="fa fa-medkit"></i></p>
-	<p style="display: none;">[3] SCRUM DLA ZESPOŁU 
-		<abbr title="podgląd dokumentu">
-			<a href ="../pdf/Zaswiadczenie ukonczenia szkolenia scrum dla zespolu.pdf" target="_blank">
-				<i class="fas fa-file-pdf"></i>
-			</a>
-		</abbr>
-	</p>
-	<p style="display: none;">[2] MS Access - zbieranie i konsolidacja informacji, przetwarzanie i prezentacja danych 
-		<abbr title="podgląd dokumentu">
-			<a href="../pdf/Swiadectwo ukonczenia szkolenia MS Access - zbieranie i konsolidacja informacji, przetwarzanie i prezentacja danych.pdf" target="_blank">
-				<i class="fas fa-file-pdf"></i>
-			</a>
-		</abbr>
-	</p>
-	<p style="display: none;">[1] MS Excel 2010 - Przegląd narzędzi zaawansowanych 
-		<abbr title="podgląd dokumentu">
-			<a href="../pdf/Swiadectwo ukonczenia szkolenia MS Excel 2010 - Przeglad narzedzi zaawansowanych.pdf" target="_blank">
-				<i class="fas fa-file-pdf"></i>
-			</a>
-		</abbr>
-	</p>
-	<p style="display: none;">[0] MS Excel dla zaawansowanych 
-		<abbr title="podgląd dokumentu">
-			<a href="../pdf/Dyplom Microsoft Excel dla Zaawansowanych.pdf" target="_blank">
-				<i class="fas fa-file-pdf"></i>
-			</a>
-		</abbr>
-	</p>
+	<div id="iframe-left">
+		<?php include 'nav.html'; ?>
+	</div>
+	<div id="iframe-right">
+		<section>
+			<h2 style="display: none;"><i class="fa fa-university"></i> WYKSZTAŁCENIE</h2>
+			<h3 style="display: none;">[1] 10.2018 <i class="fa fa-arrow-right"></i> 12.2018</i></h3>
+			<p style="display: none;"><a href="http://www.pja.edu.pl/" target="_blank">Polsko-Japońska Akademia Technik Komputerowych</a><span>, kierunek Informatyka</span></p>
+			<h3 style="display: none;">[0] 09.2006 <i class="fa fa-arrow-right"></i> 04.2008</h3>
+			<p style="display: none;">Prywatne Liceum Ogólnokształcące dla Dorosłych Nr 19 w Warszawie. Zaliczony egzamin maturalny.</p>
+			<h2 style="display: none;"><i class="fas fa-thumbs-up"></i> KURSY I SZKOLENIA</h2>
+			<p style="display: none;">[4] kurs pierwszej pomocy <i class="fa fa-medkit"></i></p>
+			<p style="display: none;">[3] SCRUM DLA ZESPOŁU 
+				<abbr title="podgląd dokumentu">
+					<a href ="../pdf/Zaswiadczenie ukonczenia szkolenia scrum dla zespolu.pdf" target="_blank">
+						<i class="fas fa-file-pdf"></i>
+					</a>
+				</abbr>
+			</p>
+			<p style="display: none;">[2] MS Access - zbieranie i konsolidacja informacji, przetwarzanie i prezentacja danych 
+				<abbr title="podgląd dokumentu">
+					<a href="../pdf/Swiadectwo ukonczenia szkolenia MS Access - zbieranie i konsolidacja informacji, przetwarzanie i prezentacja danych.pdf" target="_blank">
+						<i class="fas fa-file-pdf"></i>
+					</a>
+				</abbr>
+			</p>
+			<p style="display: none;">[1] MS Excel 2010 - Przegląd narzędzi zaawansowanych 
+				<abbr title="podgląd dokumentu">
+					<a href="../pdf/Swiadectwo ukonczenia szkolenia MS Excel 2010 - Przeglad narzedzi zaawansowanych.pdf" target="_blank">
+						<i class="fas fa-file-pdf"></i>
+					</a>
+				</abbr>
+			</p>
+			<p style="display: none;">[0] MS Excel dla zaawansowanych 
+				<abbr title="podgląd dokumentu">
+					<a href="../pdf/Dyplom Microsoft Excel dla Zaawansowanych.pdf" target="_blank">
+						<i class="fas fa-file-pdf"></i>
+					</a>
+				</abbr>
+			</p>
+		</section>
 	</div>
 </article>
 
