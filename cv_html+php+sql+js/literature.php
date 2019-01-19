@@ -42,28 +42,30 @@ if (isset($_cookie['css'])) {
 	</div>
 	<div id="iframe-right">
 		<section>
-			<h2 id="LITERATURA" style="display: none;"><i class="fa fa-book"></i> LITERATURA</h2>
-			<?php
-			$connection=mysql_connect("littledigits.pl", "kbt_cv", "testing") or die ("die przy połączeniu z serwerem");
-			mysql_select_db("kbt_cv") or die ("die przy łączeniu z bazą");
-			mysql_query("SET CHARSET utf8");
-			mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
-			$wynik=mysql_query("SELECT * FROM literature") or die ("die przy zapytaniu");
+			<div>
+				<h2 id="LITERATURA" style="display: none;"><i class="fa fa-book"></i> LITERATURA</h2>
+				<?php
+				$connection=mysql_connect("littledigits.pl", "kbt_cv", "testing") or die ("die przy połączeniu z serwerem");
+				mysql_select_db("kbt_cv") or die ("die przy łączeniu z bazą");
+				mysql_query("SET CHARSET utf8");
+				mysql_query("SET NAMES `utf8` COLLATE `utf8_polish_ci`");
+				$wynik=mysql_query("SELECT * FROM literature") or die ("die przy zapytaniu");
 	
-			while ($rekord = mysql_fetch_assoc($wynik)) {
-			$key=$rekord['key'];
-			$read=$rekord['read'];
-			$title=$rekord['title'];
-			$author=$rekord['author'];
+				while ($rekord = mysql_fetch_assoc($wynik)) {
+				$key=$rekord['key'];
+				$read=$rekord['read'];
+				$title=$rekord['title'];
+				$author=$rekord['author'];
 
-			if($read!=""){$read="<i class='fa fa-check-square'></i> ";}else{$read="<i class='fas fa-square'></i> ";}
-			if($title!=""){$title="<cite>$title</cite>";}
+				if($read!=""){$read="<i class='fa fa-check-square'></i> ";}else{$read="<i class='fas fa-square'></i> ";}
+				if($title!=""){$title="<cite>$title</cite>";}
 
-			echo '<p style="display: none;">['.$key.'] '.$read .'"'.$title.'" - '.$author.'</p>';
-			}
+				echo '<p style="display: none;">['.$key.'] '.$read .'"'.$title.'" - '.$author.'</p>';
+				}
 
-			mysql_close($connection);
-			?>
+				mysql_close($connection);
+				?>
+			</div>
 		</section>
 	</div>
 </article>

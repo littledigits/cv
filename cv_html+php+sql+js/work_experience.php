@@ -42,6 +42,7 @@ if (isset($_cookie['css'])) {
 		</div>
 <div id="iframe-right">
 <section>
+<div>
 <h2 style="display: none;"><i class="fa fa-suitcase"></i> DOŚWIADCZENIE ZAWODOWE</h2>
 <?php
 function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()" style="display: none;">';}
@@ -102,6 +103,7 @@ function h3($ii){echo '<h3 class="clickable" onclick="subdirOpenClose'.$ii.'()" 
 <p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> prawidłowe liczenie, ważenie i identyfikowanie artykułów przyjmowanych do i wydawanych z magazynu,</p>
 <p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> sprawdzanie towarów z fakturami pod względem jakościowym i ilościowym,</p>
 <p class="h3-p-list"><i class="fa fa-cog fa-spin"></i> rejestracja i gromadzenie danych dotyczących strat i niedoborów zaistniałych w magazynie.</p>
+</div>
 </div>
 </section>
 </div>

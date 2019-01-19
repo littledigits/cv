@@ -41,6 +41,7 @@ if (isset($_cookie['css'])) {
 		</div>
 		<div id="iframe-right">
 			<section>
+				<div>
 				<h2 style="display: none;"><i class="fas fa-ellipsis-h"></i> INNE</h2>
 				<?php
 				$style=' style="display: none;"';
@@ -59,7 +60,9 @@ if (isset($_cookie['css'])) {
 				if($description!=""){$description=" $description<br>";}
 				echo '<p'.$style.'>['.$key.'] '.$icone.$description.'</p>';
 				?>
+			</div>
 
+			<div>
 				<h2 style="display: none;"><i class="fas fa-user-plus"></i> ZAINTERESOWANIA</h2>
 				<?php
 				//mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
@@ -76,7 +79,9 @@ if (isset($_cookie['css'])) {
 				if($description!=""){$description=" $description<br>";}
 				echo '<p'.$style.'>['.$key.'] '.$icone.$description.'</p>';}
 				?>
+			</div>
 
+			<div>
 				<h2 style="display: none;"><i class="fa fa-bullhorn"></i> JĘZYKI OBCE</h2>
 				<?php
 				//mysql_select_db ("kbt_cv") or die ("die przy łączeniu z bazą");
@@ -93,6 +98,7 @@ if (isset($_cookie['css'])) {
 				
 				mysql_close($connection);
 				?>
+			</div>
 			</section>
 		</div>
 	</article>
