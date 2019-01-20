@@ -1,6 +1,8 @@
 <?php
-if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/User/OneDrive/cv') {
+if ($_SERVER['DOCUMENT_ROOT']=='C:/Users/User/OneDrive') {
 	$urlheaderaddress='localhost/menu.php';
+} elseif ($_SERVER['DOCUMENT_ROOT']=='C:/Users/Lenovo/OneDrive'){
+	$urlheaderaddress='localhost/cv/menu.php';
 } else {
 	$urlheaderaddress='littledigits.pl/menu.php';
 }
