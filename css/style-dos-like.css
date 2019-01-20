@@ -1,5 +1,6 @@
-* {font-family: Lato, sans-serif, Share Tech Mono, Lucida Console;color: white;background-color: black;font-size: 105%;}
+* {font-family: Lato, sans-serif, Share Tech Mono, Lucida Console;color: white;background-color: black;font-size: 105%;cursor: default;}
 i, a {background: transparent;}
+a {cursor: pointer;}
 
 .nc {display: none;}
 
@@ -33,16 +34,22 @@ article.html * {animation: coloristic 1.5s;}
 	from {color: black;}
 	to {color: white;}
 }
+article h1 {padding-left: 30px;}
+article h2 {padding-left: 20px;}
+article h3 {padding-left: 10px;}
 
-section {width: 49%;float: left;}
-section:nth-of-type(2) {float: right;}
+.section-float {width: 49%;float: right;}
+.section-float:nth-of-type(1) {float: left;}
+section div {border: 1px solid transparent;}
+section div:hover h2 {animation: h2HoverShadow 2s alternate-reverse;}
+@keyframes h2HoverShadow {
+	to {text-shadow: 0 0 5px white;}
+}
 
 #iframe-left {display: none;}
 
 .subdir-visible-hidden {display: none;}
 .subdir-hidden-visible {display: unset;}
-
-.h3-p-list {margin-left: 3%;}
 
 p {margin: 1px;}
 article p {line-height: 170%;}
@@ -94,8 +101,6 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 	.menu-html li, .menu-js li {float: left;margin: 0 0 0 15px;}
 	.menu-html li:first-child, .menu-js li:first-child {margin: 0;}
 	.menu-html a, .menu-js a {text-decoration: none;font-size: 90%;}
-	h2:before {content: "<SUBDIR> ";font-size: 70%;color: grey;transition: 0.4s;}
-	h2:hover::before {content: "<SUBDIR> ";font-size: 70%;color: white;transition: 0.4s;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -110,7 +115,7 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 	.menu-html li, .menu-show li {margin: 0;text-align: center;}
 	.menu-html a, .menu-show a {margin-top: 1%; margin-bottom: 1%; padding: 2% 0;text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
-	section {width: 100%;clear: both;}
+	.section-float {width: 100%;clear: both;}
 	.bottom-p {display: none;}
 }
 
@@ -129,7 +134,7 @@ footer span img {height: 20px;width: 20px;vertical-align: baseline;}
 	.menu-html li, .menu-show li {margin: 0;text-align: center;}
 	.menu-html a, .menu-show a {margin-top: 5%;margin-bottom: 5%;text-decoration: none;display: inline-block;}
 	nav:hover .menu-html, ul.menu-show {display: block;}
-	section {width: 100%;clear: both;}
+	.section-float {width: 100%;clear: both;}
 	footer {padding-right: 1px;}
 	#footer-brands-icons {float: right;}
 	li a:before {content: none;}
