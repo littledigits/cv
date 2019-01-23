@@ -78,8 +78,7 @@ footer .footer-roll p:nth-child(2) {animation: rollB 3s alternate 3s infinite;po
 			from {z-index: 1;}
 			to {z-index: -1;}
 		}
-
-footer span img {height: 20px;width: 20px;vertical-align: baseline;}
+footer span img, svg.database {height: 20px;width: 20px;vertical-align: baseline;}
 
 .menu-content {display: none;z-index: 1;position: absolute;}
 .menu-content button {color: black;background-color: white;}
