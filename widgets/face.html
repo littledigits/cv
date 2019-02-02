@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>face</title>
+	<style>
+		#face span {border: 1px solid white;padding: 3px;border-radius: 3px;}
+		#face span:hover {color: black;background: white;}
+	</style>
+</head>
+<body>
+	<div id="face" style="display: inline-flex;" onclick="blinking()">
+	<div>
+		<svg height="100" width="100" style="border: 2px solid white;border-radius: 50%;margin: 0 0 auto;">
+		<path id="smile" d="M 20 75 q 30 0 60 0" stroke="white" stroke-width="2" fill="none" />
+		<line x1="50" y1="20" x2="40" y2="60" style="stroke: white;stroke-width: 2;"/>
+		<line x1="40" y1="60" x2="50" y2="65" style="stroke: white;stroke-width: 2;"/>
+		<ellipse id = "blinkingeye" cx="30" cy="20" rx="10" ry="10" fill="white" stroke="white" stroke-width="2"/>
+		<circle cx="70" cy="20" r="10" fill="none" stroke="white" stroke-width="2"/>
+	</svg>
+</div>
+	<div id="teaser" style="height: auto;">
+		<span>click!!!</span>
+	</div>
+	</div>
+
+	<script>
+		function blinking(){
+			var smiled = document.getElementById('smile').getAttribute('d');
+			var smileVar = 0;
+			var blinkRy = document.getElementById('blinkingeye').getAttribute('ry');
+			var blinkInterval = setInterval(blink, 100);
+			function blink(){
+				if (blinkRy == 1){
+					clearInterval(blinkInterval);
+					setInterval(blinkReverse, 100);
+					function blinkReverse(){
+						if (blinkRy == 10){
+							clearInterval(blinkInterval);
+						} else {
+							blinkRy++;
+							document.getElementById('blinkingeye').setAttribute('ry', blinkRy);
+						}
+					}
+				} else {
+					blinkRy--;
+					document.getElementById('blinkingeye').setAttribute('ry', blinkRy);
+					smileVar+=parseInt(2.7777777777777777777777777777778);
+					document.getElementById('smile').setAttribute('d', 'M 20 75 q 30 ' + smileVar + ' 60 0');
+				}
+			}
+		}
+	</script>

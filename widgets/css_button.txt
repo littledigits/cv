@@ -1,5 +1,14 @@
-<button class="navigator" onclick="menuOpen()">css menu</button>
+<button class="navigator" onclick="menuOpen()">więcej</button>
 		<div id="menu-content" class="menu-content">
+			&nbsp;|&nbsp;
 			<button onclick="setCookieDos()" id="button-dos">dos</button>
-			<button onclick="setCookieNc()" id="button-nc">norton commander</button>
+			&nbsp;
+			<abbr title="ta sama struktura danych zmieniona głównie przez css"><button onclick="setCookieNc()" id="button-nc">norton commander</button></abbr>
+			&nbsp;|&nbsp;
+			<abbr title="wersja dająca jak najwięcej funkcjonalności z użyciem html i css"><a href="projects/html/address.html">html</a></abbr>
+			&nbsp;
+			<abbr title="projekt na podstawie materiałów z Ranczo pod pomarańczą z wykorzystaniem Bootstrap"><a href="projects/ranczo/">ranczo</a></abbr>
+			&nbsp;
+			<abbr title="intro z animacjami z użyciem jQuery, wersja 0.8"><a href="/">intro</a></abbr>
+			&nbsp;|
 		</div>

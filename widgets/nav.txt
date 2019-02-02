@@ -1,0 +1,29 @@
+<?php
+echo '<button id="menu-button" onclick="menuShow()">menu</button>';
+echo '<ul id="menu-js" class="menu-js navigation">';
+$filestomenu = glob("*cv*.php");
+$records=count($filestomenu);
+$file=pathinfo($_SERVER['PHP_SELF']);
+for ($i=0; $i < $records; $i++) {
+	
+	if($filestomenu[$i]==$file['basename']){
+		$class='href-menu-selected';
+	} else {
+		$class='href-menu';
+	}
+
+	$filetoopen=fopen($filestomenu[$i], 'r');
+	$needle='<title>';
+	while (!feof($filetoopen)) {
+		$haystack=fgets($filetoopen);
+			if(strstr($haystack,$needle)){
+	 			$title=chop(substr($haystack, 7));
+	 			$title=str_replace(' - littleDIGITS','',$title);
+	 			break;
+			} else {echo '';}
+	}
+	fclose($filetoopen);
+
+	echo '<li><a href="'.$filestomenu[$i].'"class="'.$class.'">'.$title.'</a></li>';
+	}
+?>

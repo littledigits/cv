@@ -12,9 +12,9 @@ echo '<table>';
 while($record=mysql_fetch_assoc($allrecords)){
 	$skilltext=$record['skill'];
 	$skillbar=$record['skillbar'];
-	$wide=$skillbar*20;
+	$wide=$skillbar*15;
 
-	echo '<tr><td>&#9507 </td><td style="text-align: right;">'.$skilltext.'</td><td style="background-color:white; color:black; width: 30%;text-align:right;"><div class="skillbar" style="width: '.$wide.'%;padding-top: 3px;">'.$skillbar.'</div></td></tr>';
+	echo '<tr><td>&#9507 </td><td style="text-align: right;">'.$skilltext.'</td><td style="background-color:white; color:black; width: 50%;text-align:right;"><div class="skillbar" style="width: '.$wide.'%;padding-top: 3px;">'.$skillbar.'</div></td></tr>';
 }
 echo '</table>';
 ?>

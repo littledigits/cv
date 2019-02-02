@@ -1,6 +1,6 @@
 * {font-family: Lato, sans-serif, Share Tech Mono, Lucida Console;color: white;background-color: black;font-size: 105%;cursor: default;}
 i, a {background: transparent;}
-a {cursor: pointer;}
+a, button {cursor: pointer;}
 
 .nc {display: none;}
 
@@ -18,7 +18,7 @@ header * {font-family: Audiowide, Lucida Console;margin: 0;word-wrap: break-word
 	to {left: 0;}
 }
 #menu-button {display: none;}
-.href-menu {text-shadow: white 0 0 1px;color: transparent;transition: 1.7s;}
+.href-menu {/*text-shadow: white 0 0 1px;color: grey;*/transition: 1.7s;}
 .href-menu-selected {border-radius: 3px;animation: shine 1s;animation-direction: alternate-reverse;animation-delay: .5s;}
 @keyframes shine {
 	from {background-color: black;color: white;}
@@ -82,7 +82,10 @@ footer span img, svg.database {height: 20px;width: 20px;vertical-align: baseline
 
 .menu-content {display: none;z-index: 1;position: absolute;}
 .menu-content button {color: black;background-color: white;}
-.show {display: initial;}
+.menu-content abbr {text-decoration: none;}
+.menu-content a {color: white;background: black;border: 2px solid white;border-radius: 3px;text-decoration: none;padding-left: 8px;padding-right: 8px;transition: 0.2s;}
+.menu-content a:hover {color: black;background: white;border: 2px solid white;transition: 0.2s;}
+.show {display: inline-flex;}
 
 #button-dos {color:white;background:black;}
 #button-dos:hover {color: black;background: white;}

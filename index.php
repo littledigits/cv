@@ -1,11 +1,9 @@
 <?php
-include 'meta.php';
+include 'meta.html';
 ?>
-<!doctype html>
-<html lang="pl">
-<title>intro 0.7 - littleDIGITS</title>
+<title>intro 0.8 - littleDIGITS</title>
 <meta charset="utf-8">
-<link rel="shortcut icon" href="images/logo.png">
+<link rel="shortcut icon" href="/images/logo.png">
 <style>
 	* {font-family: Lato, Share Tech Mono, Lucida Console;cursor: default;}
 	p {font-size: 24px;text-align: center;display: none;color: white;}
@@ -16,12 +14,16 @@ include 'meta.php';
 	#href-menu, #href-reload {text-shadow: black 0 0 2px;text-decoration: none;}
 	#href-menu:hover, #href-reload:hover, .fa-redo:hover {font-size: 150%;}
 	a {cursor: pointer;}
+	#span-tak, #span-nie {width: 50%;}
+	#span-tak:hover {cursor: pointer;}
+	#span-tak span, .ld-button {color: white;background: black;border: 1px solid white;border-radius: 5px;padding-left: 15px;padding-right: 15px;text-decoration: none;}
+	#span-tak:hover span, .ld-button:hover {color: black;background: white;}
 </style>
-<script src="js/jquery-3.3.1.js"></script>
+<script src="/js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
 	<div id="href-menu-reload" style="position: fixed;top: 0;right: 0;font-size: 130%;z-index: 10;padding: 5px;background: transparent;">
-		<a id="href-menu" href="menu.php">[x]</a>
-		<a id="href-reload" href="index.php" style="display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
+		<a id="href-menu" href="01_cv_address.php">[x]</a>
+		<a id="href-reload" href="/" style="display: none;">[<i class="fas fa-redo" style="font-size: 60%;"></i>]</a>
 	</div>
 	<div id="div-1" style="background: white;height: 100%;width: 100%;overflow: auto;"></div>
 	<p style="padding-top: 40px;">0</p>
@@ -35,7 +37,7 @@ include 'meta.php';
 	<p>8</p>
 	<p>9</p>
 	<p>Mam nadzieję, że przyciągnąłem Twoją uwagę i możemy przejść dalej?</p>
-	<p><span id="span-tak" style="width: 50%;float: left;text-decoration: underline;cursor: pointer;">tak</span><span id="span-nie" style="width: 50%;float: right;text-decoration: underline;">nie</span></p>
+	<p><span id="span-tak" style="float: left;"><span>tak</span></span><span id="span-nie" style="float: right;">nie</span></p>
 	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;overflow: auto;padding-top: 40px;">
 
 		<div class="loading">
@@ -52,11 +54,11 @@ include 'meta.php';
 		
 		<br style="clear: left;">
 		<br>
-		<div id="motivation-letter" style="width: 100%;display: none;margin-top: 5%;">
+		<div id="motivation-letter" style="width: 100%;display: none;margin-top: 5%;margin-bottom: 15%;">
 			<p style="display: block;margin: 0;padding-top: initial;padding:-bottom: initial;">Niniejszym zapraszam do obejrzenia mojego CV</p>
 			<p style="display: block;text-align: left;">Chciałbym nim zaprezentować siebie i wszystko czego się nauczyłem. Liczę, że w ten nieszablonowy sposób zachęcę Cię do spojrzenia na mnie poza stereotypami. Jeszcze nie mogę się pochwalić certyfikatem, ale powyższy zestaw zalet nie jest możliwy do wyuczenia.</p>
 			<p style="display: block;text-align: left;">Pamiętaj, że każdego dnia uczę się czegoś nowego.</p>
-			<p style="display: block;margin: 0;padding-top: initial;padding:-bottom: initial;text-align: center;"><a href="menu.php" tabindex="0" style="text-decoration: none;color: white;">Przejdź</a></p>
+			<p style="display: block;margin: 0;padding-top: initial;padding:-bottom: initial;text-align: center;"><a href="01_cv_address.php" tabindex="0" class="ld-button">Przejdź</a></p>
 		</div>
 	</div>
 <script>
