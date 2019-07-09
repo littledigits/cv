@@ -1,7 +1,7 @@
 <?php
 include 'meta.html';
 ?>
-<title>intro 0.8 - littleDIGITS</title>
+<title>intro 0.81 - littleDIGITS</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" href="/images/logo.png">
 <style>
@@ -14,10 +14,9 @@ include 'meta.html';
 	#href-menu, #href-reload {text-shadow: black 0 0 2px;text-decoration: none;}
 	#href-menu:hover, #href-reload:hover, .fa-redo:hover {font-size: 150%;}
 	a {cursor: pointer;}
-	#span-tak, #span-nie {width: 50%;}
-	#span-tak:hover {cursor: pointer;}
-	#span-tak span, .ld-button {color: white;background: black;border: 1px solid white;border-radius: 5px;padding-left: 15px;padding-right: 15px;text-decoration: none;}
-	#span-tak:hover span, .ld-button:hover {color: black;background: white;}
+	#span-tak, #span-nie {width: 50%;margin-top: 10px;}
+	.ld-button {color: white;background: black;border: 1px solid white;border-radius: 5px;padding-left: 15px;padding-right: 15px;text-decoration: none;}
+	.ld-button:hover {color: black;background: white;cursor:pointer;}
 </style>
 <script src="/js/jquery-3.3.1.js"></script>
 <body style="background: black;margin: 0 0 0 0;">
@@ -37,7 +36,7 @@ include 'meta.html';
 	<p>8</p>
 	<p>9</p>
 	<p>Mam nadzieję, że przyciągnąłem Twoją uwagę i możemy przejść dalej?</p>
-	<p><span id="span-tak" style="float: left;"><span>tak</span></span><span id="span-nie" style="float: right;">nie</span></p>
+	<p><span id="span-tak" style="float: left;"><span class="ld-button">tak</span></span><span id="span-nie" style="float: right;">nie</span></p>
 	<div id="div-2" style="background: black;height: 100%;width: 100%;position: fixed;top: 0;left: 0;display: none;overflow: auto;padding-top: 40px;">
 
 		<div class="loading">
@@ -58,12 +57,12 @@ include 'meta.html';
 			<p style="display: block;margin: 0;padding-top: initial;padding:-bottom: initial;">Niniejszym zapraszam do obejrzenia mojego CV</p>
 			<p style="display: block;text-align: left;">Chciałbym nim zaprezentować siebie i wszystko czego się nauczyłem. Liczę, że w ten nieszablonowy sposób zachęcę Cię do spojrzenia na mnie poza stereotypami. Jeszcze nie mogę się pochwalić certyfikatem, ale powyższy zestaw zalet nie jest możliwy do wyuczenia.</p>
 			<p style="display: block;text-align: left;">Pamiętaj, że każdego dnia uczę się czegoś nowego.</p>
-			<p style="display: block;margin: 0;padding-top: initial;padding:-bottom: initial;text-align: center;"><a href="01_cv_address.php" tabindex="0" class="ld-button">Przejdź</a></p>
+			<p style="display: block;margin: 20px 0;padding-top: initial;padding:-bottom: initial;text-align: center;"><a href="01_cv_address.php" tabindex="0" class="ld-button">Przejdź</a></p>
 		</div>
 	</div>
 <script>
+	var i = 1500;
 	$(document).ready(function(){
-		var i = 1500;
 		$('#div-1').fadeTo(i*1.6666666666666666666666666666667, 0, 'linear', function(){
 			$('#div-1').remove();
 		});
@@ -91,29 +90,29 @@ include 'meta.html';
 			});
 		});
 	});
-	$('#span-tak').click(function(){
+	$('#span-tak').children().click(function(){
 		var screenWidth = document.body.clientWidth;
 		if (screenWidth < 480) {spanWidth = '100%'; brVisible = ''} else {spanWidth = '30%'; brVisible = 'br';}
 		$(brVisible).css({display: 'none'});
-		$('#div-2').eq(0).fadeIn(1000).css({display: 'inlineBlock'});
-		$('#creativity-loading').delay(1000).animate({width: spanWidth}, 1000, function(){
+		$('#div-2').eq(0).fadeIn(i/1.25).css({display: 'inlineBlock'});
+		$('#creativity-loading').delay(i/1.25).animate({width: spanWidth}, i/1.5, function(){
 			$('#creativity-loading-caption').css({visibility: 'visible'});
 			$('#creativity-loading-caption').text('100%');
 		});
-		$('#precision-loading').delay(2200).animate({width: spanWidth}, 1200, function(){
+		$('#precision-loading').delay(i*1.466666666666667).animate({width: spanWidth}, i/1.25, function(){
 			$('#precision-loading-caption').css({visibility: 'visible'});
 			$('#precision-loading-caption').text('100%');
 		});
-		$('#engagement-loading').delay(3400).animate({width: spanWidth}, 1400, function(){
+		$('#engagement-loading').delay(i*2.266666666666667).animate({width: spanWidth}, i/1.4, function(){
 			$('#engagement-loading-caption').css({visibility: 'visible'});
 			$('#engagement-loading-caption').text('100%');
 		});
-		$('#self-reliance-loading').delay(4800).animate({width: spanWidth}, 1400, function(){
+		$('#self-reliance-loading').delay(i*3.2).animate({width: spanWidth}, i/1.4, function(){
 			$('#self-reliance-loading-caption').css({visibility: 'visible'});
 			$('#self-reliance-loading-caption').text('100%');
 		});
 		var x = $('#knowledge-loading');
-		x.delay(6200).animate({width: spanWidth}, 4000, function(){
+		x.delay(i*4).animate({width: spanWidth}, i*2.666666666666667, function(){
 			$('#knowledge-loading-caption').css({visibility: 'visible'});
 			x.css({backgroundColor: 'red'});
 			$('#knowledge-loading-caption').text('wciąż ładuję');
@@ -123,7 +122,7 @@ include 'meta.html';
 		});
 	});
 	$('#span-nie').mouseover(function(){
-		$(this).fadeOut(200);
+		$(this).fadeOut(i/7.5);
 	});
 </script>
 </body>
