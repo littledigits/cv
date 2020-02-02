@@ -1,0 +1,50 @@
+if(uMvt().search(/pomocy/i) >= 0 && uMvt().length <= 6 || uMvt().search(/pomoc/i) >= 0/* && uMvt().length <= 5*/){
+	document.getElementById('help-button').setAttribute('class', 'suggest');
+	document.getElementById('help-button').style.display  = 'block';
+} else {
+	document.getElementById('help-button').removeAttribute('class');
+}
+if((uMvt().search(/opowiedz więcej/i) >= 0 || uMvt().search(/opowiedz wiecej/i) >= 0) && uMvt().length <= 15){
+	document.getElementById('tell-more-button').setAttribute('class', 'suggest');
+} else {
+	document.getElementById('tell-more-button').removeAttribute('class');
+}
+if(uMvt().search(/doświadczenie zawodowe/i) >= 0 || uMvt().search(/doswiadczenie zawodowe/i) >= 0){
+	document.getElementById('work-experience-button').setAttribute('class', 'suggest');
+} else {
+	document.getElementById('work-experience-button').removeAttribute('class');
+}
+if((uMvt().search(/więcej o www/i) >= 0 || uMvt().search(/wiecej o www/i) >= 0)/* && uMvt().length <= 12*/ || (uMvt().search(/więcej o tej stronie/i) >= 0 || uMvt().search(/wiecej o tej stronie/i) >= 0)/* && uMvt().length <= 20*/ || (uMvt().search(/opowiedz więcej o stronie www/i) >= 0 || uMvt().search(/opowiedz wiecej o stronie www/i) >= 0)/* && uMvt().length <= 29*/){
+	document.getElementById('tell-more-www-button').style.display = 'block';
+	document.getElementById('tell-more-www-button').setAttribute('class', 'suggest');
+	document.getElementById('tell-more-button').removeAttribute('class');
+} else {
+	document.getElementById('tell-more-www-button').removeAttribute('class');
+	document.getElementById('tell-more-www-button').style.display = 'none';
+}
+if (uMvt().search(/webmaster/i) >= 0/* && uMvt().length <= 9*/){
+	document.getElementById('work-experience-webmaster-button').style.display = 'block';
+	document.getElementById('work-experience-webmaster-button').setAttribute('class', 'suggest');
+	//document.getElementById('').removeAttribute('class');
+} else {
+	//document.getElementById('work-experience-webmaster-button').removeAttribute('class');
+	document.getElementById('work-experience-webmaster-button').style.display = 'none';
+}
+if (uMvt().search(/specjalista/i) >= 0){
+	document.getElementById('work-experience-project-specialist-button').style.display = 'block';
+	document.getElementById('work-experience-project-specialist-button').setAttribute('class', 'suggest');
+} else {
+	document.getElementById('work-experience-project-specialist-button').style.display = 'none';
+}
+if (uMvt().search(/zainteresowania/i) >= 0){
+	document.getElementById('interests-button').style.display = 'block';
+	document.getElementById('interests-button').setAttribute('class', 'suggest');
+} else {
+	document.getElementById('interests-button').removeAttribute('class');
+}
+if (uMvt().search(/literatura/i) >= 0){
+	document.getElementById('literature-button').style.display = 'block';
+	document.getElementById('literature-button').setAttribute('class', 'suggest');
+} else {
+	document.getElementById('literature-button').removeAttribute('class');
+}
